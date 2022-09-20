@@ -28,7 +28,6 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(interval);
         if(currentMobs < maxMobs)
         {
-            Debug.Log(currentMobs);
             currentMobs+=2;
             GameObject newEnemy = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity);
             GameObject newEnemy2 = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity);
