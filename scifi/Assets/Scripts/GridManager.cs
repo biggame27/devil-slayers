@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GridManager : MonoBehaviour
 {
+    public PlayerController player;
     [SerializeField] private int width, height;
 
     [SerializeField] private Tile tilePrefab;
@@ -28,4 +30,14 @@ public class GridManager : MonoBehaviour
             }
         }
     }
+    /*
+    void OnPoint(InputValue _point)
+    {
+        Vector2 point = _point.Get<Vector2>();
+        point = new Vector2(point.x/0.16f, point.y/0.16f);
+        int currTileX = Mathf.FloorToInt((float)point.x);
+        int currTileY = Mathf.FloorToInt((float)point.y);
+        Debug.Log(currTileX + " " + currTileY);
+    }
+    */
 }

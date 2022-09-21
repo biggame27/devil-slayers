@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public float collisionOffset = 0.02f;
     public float health = 100f;
     public HealthBar healthBar;
+    private PlayerInput playerInput;
 
     public float Health
     {
@@ -44,6 +45,21 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerInput = GetComponent<PlayerInput>();
+    }
+
+    void OnSwitchMap()
+    {
+        //SwitchActionMap();
+    }
+
+    public void SwitchActionMap()
+    {
+        //enable only one
+        //playerInput.SwitchCurrentActionMap("UI");
+        //enable multiple
+        playerInput.actions.FindActionMap("Player").Disable();
+        playerInput.actions.FindActionMap("UI").Enable();
     }
 
     void Update()
