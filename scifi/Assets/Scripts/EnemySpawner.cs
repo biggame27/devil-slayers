@@ -14,6 +14,9 @@ public class EnemySpawner : MonoBehaviour
     private Transform[] spawnPoints;
 
     [SerializeField]
+    private Transform storage;
+
+    [SerializeField]
     private int maxMobs = 5;
 
     public int currentMobs = 0;
@@ -29,8 +32,8 @@ public class EnemySpawner : MonoBehaviour
         if(currentMobs < maxMobs)
         {
             currentMobs+=2;
-            GameObject newEnemy = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity);
-            GameObject newEnemy2 = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity);
+            GameObject newEnemy = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity, storage);
+            GameObject newEnemy2 = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity, storage);
         }
         StartCoroutine(spawnEnemy(interval, enemy));
     }

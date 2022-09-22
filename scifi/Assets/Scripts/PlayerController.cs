@@ -8,8 +8,11 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
     public float health = 100f;
+    Vector2 coords;
+
     public HealthBar healthBar;
     private PlayerInput playerInput;
+
 
     public float Health
     {
@@ -39,6 +42,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
 
     bool canMove = true;
+    bool building = false;
 
     void Start()
     {
@@ -48,9 +52,17 @@ public class PlayerController : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
     }
 
+    void OnBuildLaser()
+    {
+        if(!building)
+            building = true;
+        else
+            building = false;
+    }
+    /*
     void OnSwitchMap()
     {
-        //SwitchActionMap();
+        SwitchActionMap();
     }
 
     public void SwitchActionMap()
@@ -61,11 +73,7 @@ public class PlayerController : MonoBehaviour
         playerInput.actions.FindActionMap("Player").Disable();
         playerInput.actions.FindActionMap("UI").Enable();
     }
-
-    void Update()
-    {
-        
-    }
+    */
 
     void FixedUpdate()
     {
@@ -106,7 +114,15 @@ public class PlayerController : MonoBehaviour
 
     void OnFire()
     {
-        animator.SetTrigger("Attack");
+        if(!building)
+            animator.SetTrigger("Attack");
+    }
+
+    void OnLook(InputValue lookValue)
+    {
+        if(!building)
+            return;
+        coords = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
     }
 
     void SwordAttack()
@@ -138,5 +154,15 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("Defeated");
         LockMovement();
+    }
+
+    public Vector2 GetCoords()
+    {
+        return coords;
+    }
+
+    public bool GetCanBuild()
+    {
+        return building;
     }
 }
