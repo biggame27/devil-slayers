@@ -251,11 +251,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swordAttack: {fileID: 5402072862795051638}
   enemySpawner: {fileID: 0}
+  score: {fileID: 0}
   minX: -0.64
   maxX: 0.64
   minY: -0.64
   maxY: 0.64
   health: 11
+  worth: 1
   moveSpot: {x: 0, y: 0}
   healthBar: {fileID: 4740272755495235021}
 --- !u!50 &8086174282104575565
