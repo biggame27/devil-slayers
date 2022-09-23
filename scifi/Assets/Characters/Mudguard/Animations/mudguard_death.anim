@@ -81,10 +81,17 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.71428573
+  - time: 0
+    functionName: LockMovement
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: c0571d223916d0e468f07d0a4218f5dc, type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5714286
     functionName: RemoveEnemy
     data: 
-    objectReferenceParameter: {fileID: 0}
+    objectReferenceParameter: {fileID: 11500000, guid: c0571d223916d0e468f07d0a4218f5dc, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0

@@ -8,7 +8,10 @@ public class EnemySpawner : MonoBehaviour
     private GameObject mudGuardPrefab;
 
     [SerializeField]
-    private float mudGuardInterval = 7f;
+    private float mudGuardInterval;
+
+    [SerializeField]
+    private int mudGuardAmount;
 
     [SerializeField]
     private Transform[] spawnPoints;
@@ -31,9 +34,12 @@ public class EnemySpawner : MonoBehaviour
         yield return new WaitForSeconds(interval);
         if(currentMobs < maxMobs)
         {
-            currentMobs+=2;
-            GameObject newEnemy = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity, storage);
-            GameObject newEnemy2 = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity, storage);
+            currentMobs+=mudGuardAmount;
+            for(int i = 0; i < mudGuardAmount; i++)
+            {
+                GameObject newEnemy = Instantiate(enemy, spawnPoints[Random.Range(0,15)].position, Quaternion.identity, storage);
+            }
+            
         }
         StartCoroutine(spawnEnemy(interval, enemy));
     }

@@ -16,8 +16,30 @@ public class Turret : MonoBehaviour
     [SerializeField]
     Laser laser;
 
+    [SerializeField]
+    private float health;
+    public HealthBar healthBar;
+
+    public float Health
+    {
+        set 
+        {
+            health = value;
+            healthBar.SetHealth(value);
+            if(health <= 0)
+            {
+                Defeated();
+            }
+        }
+        get
+        {
+            return health;
+        }
+    }
+
     void Start()
     {
+        _enemies = GameObject.Find("Enemies").transform;
         StartCoroutine(Fire());
     }
 
@@ -59,12 +81,23 @@ public class Turret : MonoBehaviour
     }
 
     void LaserFire()
-    {;
+    {
         laser.Fire();
     }
 
     void StopLaserFire()
     {
         laser.StopFire();
+    }
+
+    public void TakeDamage(float damage)
+    {
+        Debug.Log("hi");
+        Health -= damage;
+    }
+
+    public void Defeated()
+    {
+        Destroy(transform.parent.gameObject);
     }
 }

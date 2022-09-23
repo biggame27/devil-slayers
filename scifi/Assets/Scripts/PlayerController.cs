@@ -12,7 +12,10 @@ public class PlayerController : MonoBehaviour
 
     public HealthBar healthBar;
     private PlayerInput playerInput;
+    public GameObject turret;
 
+    Ray ray;
+    RaycastHit hit;
 
     public float Health
     {
@@ -35,6 +38,7 @@ public class PlayerController : MonoBehaviour
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     SpriteRenderer spriteRenderer;
     Animator animator;
+    Transform turretStorage;
 
     public SwordAttack swordAttack;
 
@@ -50,6 +54,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerInput = GetComponent<PlayerInput>();
+        turretStorage = GameObject.Find("Turrets").transform;
     }
 
     void OnBuildLaser()
@@ -116,6 +121,17 @@ public class PlayerController : MonoBehaviour
     {
         if(!building)
             animator.SetTrigger("Attack");
+        else
+        {
+            if(!IsTouchingMouse())
+            {
+                Vector2 newCoords = coords;
+                float timesX = Mathf.Round(coords.x/0.16f);
+                float timesY = Mathf.Round(coords.y/0.16f);
+                newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
+                Instantiate(turret, newCoords, Quaternion.identity, turretStorage);
+            }
+        }
     }
 
     void OnLook(InputValue lookValue)
@@ -123,6 +139,20 @@ public class PlayerController : MonoBehaviour
         if(!building)
             return;
         coords = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+    }
+
+    bool IsTouchingMouse()
+    {
+        bool check = false;
+        foreach(Transform child in turretStorage)
+        {
+            Vector2 point = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+            check = child.gameObject.GetComponent<Collider2D>().OverlapPoint(point);
+            if(check)
+                return true;
+        }
+        return false;
+        
     }
 
     void SwordAttack()
