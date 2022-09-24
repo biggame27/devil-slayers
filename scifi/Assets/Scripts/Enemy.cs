@@ -15,7 +15,8 @@ public class Enemy : MonoBehaviour
     public Score score;
 
     public float minX, maxX, minY, maxY;
-    public float health = 11f;
+    public float health;
+    private float maxHealth;
     public int worth = 1;
     private float waitTime = 3f;
     float patrolMoveSpeed = 0.3f;
@@ -31,7 +32,7 @@ public class Enemy : MonoBehaviour
         set 
         {
             health = value;
-            healthBar.SetHealth(value);
+            healthBar.SetHealth(value/maxHealth*100f);
             if(health <= 0)
             {
                 Defeated();
@@ -45,6 +46,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        maxHealth = health;
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
@@ -70,14 +72,14 @@ public class Enemy : MonoBehaviour
     {
         distance = Vector2.Distance(transform.position, player.transform.position);
         Vector2 direction = player.transform.position - transform.position;
-        direction.Normalize();
 
-        if(distance < .18)
+        if(distance < .14 && Mathf.Abs(direction.y) < .04)
         {
-            animator.SetTrigger("Attack");
+            DoDelayAction(1f);
         }
         else if(distance < .78)
         {
+            direction.Normalize();
             rb.MovePosition(rb.position + direction*this.followMoveSpeed*Time.fixedDeltaTime);
             following = true;
             PlayWalkAnimation(true);
@@ -143,9 +145,13 @@ public class Enemy : MonoBehaviour
     {
         LockMovement();
         if(spriteRenderer.flipX)
+        {
             swordAttack.AttackRight();
+        }
         else
+        {
             swordAttack.AttackLeft();
+        }
     }
 
     void EndSwordAttack()
@@ -180,5 +186,19 @@ public class Enemy : MonoBehaviour
     public void UnlockMovement()
     {
         canMove = true;
+    }
+
+    void DoDelayAction(float delayTime)
+    {
+        if(canMove)
+            StartCoroutine(DelayAction(delayTime));
+    }
+    
+    IEnumerator DelayAction(float delayTime)
+    {
+        LockMovement();
+        yield return new WaitForSeconds(delayTime);
+        animator.SetTrigger("Attack");
+        
     }
 }

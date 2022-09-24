@@ -18,6 +18,7 @@ public class Turret : MonoBehaviour
 
     [SerializeField]
     private float health;
+    private float maxHealth; 
     public HealthBar healthBar;
 
     public float Health
@@ -25,7 +26,7 @@ public class Turret : MonoBehaviour
         set 
         {
             health = value;
-            healthBar.SetHealth(value);
+            healthBar.SetHealth(value/maxHealth*100f);
             if(health <= 0)
             {
                 Defeated();
@@ -39,6 +40,7 @@ public class Turret : MonoBehaviour
 
     void Start()
     {
+        maxHealth = health;
         _enemies = GameObject.Find("Enemies").transform;
         StartCoroutine(Fire());
     }

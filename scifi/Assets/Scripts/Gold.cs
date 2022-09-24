@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Gold : MonoBehaviour
 {
     public Text goldText;
-    int gold = 0;
+    private int gold = 0;
 
     public void AddGold(int change)
     {
@@ -18,6 +18,11 @@ public class Gold : MonoBehaviour
     {
         gold -= change;
         SetGold();
+    }
+
+    public int GetGold()
+    {
+        return gold;
     }
 
     public void SetGold()

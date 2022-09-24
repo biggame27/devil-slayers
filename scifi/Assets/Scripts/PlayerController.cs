@@ -7,12 +7,15 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.02f;
-    public float health = 100f;
+    public float health;
+    private float maxHealth;
     Vector2 coords;
 
     public HealthBar healthBar;
     private PlayerInput playerInput;
     public GameObject turret;
+    [SerializeField]
+    private Gold gold;
 
     Ray ray;
     RaycastHit hit;
@@ -22,7 +25,7 @@ public class PlayerController : MonoBehaviour
         set 
         {
             health = value;
-            healthBar.SetHealth(value);
+            healthBar.SetHealth(value/maxHealth*100f);
             if(health <= 0)
             {
                 Defeated();
@@ -35,6 +38,7 @@ public class PlayerController : MonoBehaviour
     }
 
     public ContactFilter2D movementFilter;
+    public Collider2D placingCheck;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     SpriteRenderer spriteRenderer;
     Animator animator;
@@ -55,31 +59,24 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerInput = GetComponent<PlayerInput>();
         turretStorage = GameObject.Find("Turrets").transform;
+        maxHealth = health;
     }
 
     void OnBuildLaser()
     {
         if(!building)
+        {
+            placingCheck.enabled = true;
             building = true;
-        else
+            LockMovement();
+        }else
+        {
+            placingCheck.enabled = false;
+            UnlockMovement();
             building = false;
+        }
     }
-    /*
-    void OnSwitchMap()
-    {
-        SwitchActionMap();
-    }
-
-    public void SwitchActionMap()
-    {
-        //enable only one
-        //playerInput.SwitchCurrentActionMap("UI");
-        //enable multiple
-        playerInput.actions.FindActionMap("Player").Disable();
-        playerInput.actions.FindActionMap("UI").Enable();
-    }
-    */
-
+    
     void FixedUpdate()
     {
         if(canMove && movementInput != Vector2.zero)
@@ -120,16 +117,20 @@ public class PlayerController : MonoBehaviour
     void OnFire()
     {
         if(!building)
+        {
+            UnlockMovement();
             animator.SetTrigger("Attack");
+        }
         else
         {
-            if(!IsTouchingMouse())
+            if(!IsTouchingMouse() && gold.GetGold() >= 5)
             {
                 Vector2 newCoords = coords;
                 float timesX = Mathf.Round(coords.x/0.16f);
                 float timesY = Mathf.Round(coords.y/0.16f);
                 newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
                 Instantiate(turret, newCoords, Quaternion.identity, turretStorage);
+                gold.SubtractGold(5);
             }
         }
     }
@@ -143,10 +144,11 @@ public class PlayerController : MonoBehaviour
 
     bool IsTouchingMouse()
     {
-        bool check = false;
+        Vector2 point = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        bool check = placingCheck.OverlapPoint(point);
+        if(check) return true;
         foreach(Transform child in turretStorage)
         {
-            Vector2 point = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
             check = child.gameObject.GetComponent<Collider2D>().OverlapPoint(point);
             if(check)
                 return true;
