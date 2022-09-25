@@ -4,19 +4,18 @@ using UnityEngine;
 
 public class Laser : MonoBehaviour
 {
-    Turret turret;
     [SerializeField]
     private SpriteRenderer spriteRenderer;
-    [SerializeField]
-    private float damage;
     [SerializeField]
     private string tagCheck;
     
     Animator animator;
     Collider2D myCollider;
+    private float damage;
 
     void Start()
     {
+        damage = transform.parent.gameObject.GetComponent<Turret>().damage;
         spriteRenderer.enabled = false;
         animator = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();

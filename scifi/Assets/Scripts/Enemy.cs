@@ -19,8 +19,8 @@ public class Enemy : MonoBehaviour
     private float maxHealth;
     public int worth = 1;
     private float waitTime = 3f;
-    float patrolMoveSpeed = 0.3f;
-    float followMoveSpeed = 0.6f;
+    public float patrolMoveSpeed = 0.3f;
+    public float followMoveSpeed = 0.4f;
     public Vector2 moveSpot;
     public HealthBar healthBar;
 

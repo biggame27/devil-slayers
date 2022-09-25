@@ -18,8 +18,16 @@ public class Turret : MonoBehaviour
 
     [SerializeField]
     private float health;
+
+    [SerializeField]
+    private bool useLaser;
+
+    [SerializeField]
+    private Bullet bullet;
+
     private float maxHealth; 
     public HealthBar healthBar;
+    public float damage;
 
     public float Health
     {
@@ -92,10 +100,23 @@ public class Turret : MonoBehaviour
         laser.StopFire();
     }
 
+    void BulletFire()
+    {
+        Instantiate(bullet, transform.position, transform.rotation, transform);
+    }
+
     public void TakeDamage(float damage)
     {
-        Debug.Log("hi");
         Health -= damage;
+    }
+
+    void DoubleBulletFire()
+    {
+        Vector2 leftBullet = new Vector2(transform.position.x-0.028f, transform.position.y);
+        Instantiate(bullet, leftBullet, transform.rotation, transform);
+        Vector2 rightBullet = new Vector2(transform.position.x+0.028f, transform.position.y);
+        Instantiate(bullet, rightBullet, transform.rotation, transform);
+        
     }
 
     public void Defeated()

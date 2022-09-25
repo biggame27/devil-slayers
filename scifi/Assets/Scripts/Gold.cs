@@ -6,7 +6,13 @@ using UnityEngine.UI;
 public class Gold : MonoBehaviour
 {
     public Text goldText;
-    private int gold = 0;
+    [SerializeField]
+    private int gold;
+
+    void Start()
+    {
+        SetGold();
+    }   
 
     public void AddGold(int change)
     {

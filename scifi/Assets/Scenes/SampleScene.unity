@@ -353,7 +353,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.73
+  orthographic size: 0.53
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -736,7 +736,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1860136770, guid: 48ffbc47c37c52f4bb9c3d8fd4728d01, type: 3}
+  m_Sprite: {fileID: -918404456, guid: 9451eb8e5dfa23e4eaffb7056dddefcf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.6745098}
   m_FlipX: 0
   m_FlipY: 0
@@ -2700,7 +2700,7 @@ MonoBehaviour:
   m_Follow: {fileID: 13166391}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 0.73
+    OrthographicSize: 0.53
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -11849,6 +11849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1126165908689224463, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: gold
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 2528695387813524788, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -11945,5 +11949,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8170068116583849404, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -918404456, guid: 9451eb8e5dfa23e4eaffb7056dddefcf, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}

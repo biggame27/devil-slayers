@@ -17,7 +17,10 @@ public class FollowTarget : MonoBehaviour
         if(player.GetCanBuild())
         {
             Vector2 pos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            transform.position = new Vector3(pos.x, pos.y, 0);
+            float timesX = Mathf.Round(pos.x/0.16f);
+            float timesY = Mathf.Round(pos.y/0.16f);
+            Vector2 newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
+            transform.position = new Vector3(newCoords.x, newCoords.y, 0);
             spriteRenderer.enabled = true;
         }
         else
