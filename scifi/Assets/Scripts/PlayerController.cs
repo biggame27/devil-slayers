@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
 
     public HealthBar healthBar;
     private PlayerInput playerInput;
+    [SerializeField]
+    private FollowTarget followTarget;
     public GameObject turret;
     [SerializeField]
     private Gold gold;
@@ -125,26 +127,23 @@ public class PlayerController : MonoBehaviour
         {
             if(!IsTouchingMouse() && gold.GetGold() >= 5)
             {
-                Vector2 newCoords = coords;
-                float timesX = Mathf.Round(coords.x/0.16f);
-                float timesY = Mathf.Round(coords.y/0.16f);
-                newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
-                Instantiate(turret, newCoords, Quaternion.identity, turretStorage);
+                Instantiate(turret, followTarget.newCoords, Quaternion.identity, turretStorage);
                 gold.SubtractGold(5);
             }
         }
     }
-
+    /*
     void OnLook(InputValue lookValue)
     {
         if(!building)
             return;
-        coords = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        coords = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
     }
+    */
 
     bool IsTouchingMouse()
     {
-        Vector2 point = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        Vector2 point = followTarget.pos;
         bool check = placingCheck.OverlapPoint(point);
         if(check) return true;
         foreach(Transform child in turretStorage)
