@@ -21,6 +21,10 @@ public class FollowTarget : MonoBehaviour
         {
             if(IsPointerOverUIObject())
                 return;
+                /*
+            if(Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue() != pos)
+                IsTouchingMouse();
+                */
             pos = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
             float timesX = Mathf.Round(pos.x/0.16f);
             float timesY = Mathf.Round(pos.y/0.16f);

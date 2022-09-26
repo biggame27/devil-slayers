@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public GameObject turret;
     [SerializeField]
     private Gold gold;
+    [SerializeField]
+    private GameObject turretInfo;
 
     Ray ray;
     RaycastHit hit;
@@ -141,19 +143,31 @@ public class PlayerController : MonoBehaviour
     }
     */
 
-    bool IsTouchingMouse()
+    public bool IsTouchingMouse()
     {
         Vector2 point = followTarget.pos;
+        //checks player
         bool check = placingCheck.OverlapPoint(point);
         if(check) return true;
         foreach(Transform child in turretStorage)
         {
             check = child.gameObject.GetComponent<Collider2D>().OverlapPoint(point);
             if(check)
+            {
+                SendTurretInfo(child);
                 return true;
+            }
         }
+        turretInfo.SetActive(false);
         return false;
         
+    }
+
+    void SendTurretInfo(Transform currTurret)
+    {
+        turretInfo.SetActive(true);
+        turretInfo.GetComponent<TurretInfo>().SetController(currTurret.gameObject.GetComponent<TurretLevelController>());
+
     }
 
     void SwordAttack()
