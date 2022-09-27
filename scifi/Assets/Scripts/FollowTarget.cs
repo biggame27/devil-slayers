@@ -19,18 +19,25 @@ public class FollowTarget : MonoBehaviour
     {
         if(player.GetCanBuild())
         {
+            
             if(IsPointerOverUIObject())
+            {
+                spriteRenderer.enabled = false;
                 return;
-                /*
-            if(Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue() != pos)
-                IsTouchingMouse();
-                */
+            }
+            /*
+            if(Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue() != pos))
+                player.IsTouchingMouse();
+            */
             pos = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
             float timesX = Mathf.Round(pos.x/0.16f);
             float timesY = Mathf.Round(pos.y/0.16f);
             newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
             transform.position = new Vector3(newCoords.x, newCoords.y, 0);
-            spriteRenderer.enabled = true;
+            if(!player.IsTouchingMouse())
+                spriteRenderer.enabled = true;
+            else
+                spriteRenderer.enabled = false;
         }
         else
         {

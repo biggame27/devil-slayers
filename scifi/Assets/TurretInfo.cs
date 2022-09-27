@@ -14,14 +14,9 @@ public class TurretInfo : MonoBehaviour
         //make upgrade edits
     }
 
-    public void OpenInfo()
+    public bool CheckEnabled()
     {
-        gameObject.SetActive(true);
-    }
-
-    public void CloseInfo()
-    {
-        gameObject.SetActive(false);
+        return gameObject.activeSelf;
     }
 
     public void SetController(TurretLevelController _controller)

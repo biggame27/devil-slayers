@@ -5,16 +5,29 @@ using UnityEngine;
 public class TurretLevelController : MonoBehaviour
 {
     private int level = 1;
+    [SerializeField]
+    private int[] upgradeCosts;
+    private PlayerController player;
+
+    void Start()
+    {
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
+    }
     
     public void LevelUp()
     {
-        transform.Find("Level " + level).gameObject.SetActive(false);
-        level++;
-        transform.Find("Level " + level).gameObject.SetActive(true);
+        if(level-1 < upgradeCosts.Length && player.GetGold().GetGold() >= upgradeCosts[level-1])
+        {
+            transform.Find("Level " + level).gameObject.SetActive(false);
+            player.GetGold().SubtractGold(upgradeCosts[level-1]);
+            level++;
+            transform.Find("Level " + level).gameObject.SetActive(true);
+        }
+        
     }
 
     public void Sell()
     {
-        Destroy(gameObject);
+        Destroy(transform.parent.gameObject);
     }
 }

@@ -75,6 +75,7 @@ public class PlayerController : MonoBehaviour
             LockMovement();
         }else
         {
+            turretInfo.SetActive(false);
             placingCheck.enabled = false;
             UnlockMovement();
             building = false;
@@ -167,7 +168,11 @@ public class PlayerController : MonoBehaviour
     {
         turretInfo.SetActive(true);
         turretInfo.GetComponent<TurretInfo>().SetController(currTurret.gameObject.GetComponent<TurretLevelController>());
+    }
 
+    public Gold GetGold()
+    {
+        return gold;
     }
 
     void SwordAttack()
