@@ -97,7 +97,14 @@ public class Turret : MonoBehaviour
 
     void StopLaserFire()
     {
+        Debug.Log("hi");
         laser.StopFire();
+    }
+
+    void TickLaserCollider()
+    {
+        laser.StopCollider();
+        laser.StartCollider();
     }
 
     void BulletFire()

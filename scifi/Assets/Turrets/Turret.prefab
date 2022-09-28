@@ -277,7 +277,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 3
+  damage: 12
 --- !u!95 &5681635318834891873
 Animator:
   serializedVersion: 4
@@ -1504,7 +1504,7 @@ MonoBehaviour:
   useLaser: 0
   bullet: {fileID: 8789863810996517417, guid: ae16869871076bc4aa18d5522932b676, type: 3}
   healthBar: {fileID: 5159565713810978907}
-  damage: 3
+  damage: 2
 --- !u!95 &4243399404730848340
 Animator:
   serializedVersion: 4

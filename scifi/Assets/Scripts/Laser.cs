@@ -33,7 +33,16 @@ public class Laser : MonoBehaviour
         spriteRenderer.enabled = false;
         myCollider.enabled = false;
     }
+
+    public void StopCollider()
+    {
+        myCollider.enabled = false;
+    }
     
+    public void StartCollider()
+    {
+        myCollider.enabled = true;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag ==tagCheck)
