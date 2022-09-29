@@ -30,4 +30,9 @@ public class TurretLevelController : MonoBehaviour
     {
         Destroy(transform.gameObject);
     }
+
+    public int GetLevel()
+    {
+        return level;
+    }
 }
