@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     Animator animator;
     Rigidbody2D rb;
+    private Transform turrets;
     SpriteRenderer spriteRenderer;
     public SwordAttack swordAttack;
     public GameObject enemySpawner;
@@ -18,7 +19,8 @@ public class Enemy : MonoBehaviour
     public float health;
     private float maxHealth;
     public int worth = 1;
-    private float waitTime = 3f;
+    [SerializeField]
+    private float waitTime;
     public float patrolMoveSpeed = 0.3f;
     public float followMoveSpeed = 0.4f;
     public Vector2 moveSpot;
@@ -47,6 +49,7 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         maxHealth = health;
+        turrets = GameObject.Find("Turrets").transform;
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
@@ -68,10 +71,29 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    Transform GetClosestEnemy(Transform enemies)
+    {
+        Transform tMin = player.transform;
+        float minDist = Vector2.Distance(transform.position, player.transform.position);
+        distance = minDist;
+        Vector3 currentPos = transform.position;
+        foreach (Transform t in enemies)
+        {
+            float dist = Vector3.Distance(t.position, currentPos);
+            if (dist < minDist)
+            {
+                tMin = t;
+                minDist = dist;
+                distance = minDist;
+            }
+        }
+        return tMin;
+    }
+
     void FollowPlayer()
     {
-        distance = Vector2.Distance(transform.position, player.transform.position);
-        Vector2 direction = player.transform.position - transform.position;
+        Transform target = GetClosestEnemy(turrets);
+        Vector2 direction = target.position - transform.position;
 
         if(distance < .14 && Mathf.Abs(direction.y) < .04)
         {

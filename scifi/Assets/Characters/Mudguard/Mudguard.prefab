@@ -258,6 +258,9 @@ MonoBehaviour:
   maxY: 0.64
   health: 12
   worth: 1
+  waitTime: 1
+  patrolMoveSpeed: 0.3
+  followMoveSpeed: 0.4
   moveSpot: {x: 0, y: 0}
   healthBar: {fileID: 4740272755495235021}
 --- !u!50 &8086174282104575565
@@ -614,7 +617,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01959848, y: -0.015678775}
+  m_Offset: {x: -0.044708613, y: -0.015678775}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -625,7 +628,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.28512257, y: 0.097439654}
+  m_Size: {x: 0.23490232, y: 0.097439654}
   m_EdgeRadius: 0
 --- !u!114 &5402072862795051638
 MonoBehaviour:

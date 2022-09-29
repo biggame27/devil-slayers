@@ -50,14 +50,9 @@ public class SwordAttack : MonoBehaviour
                 PlayerController enemy = other.GetComponent<PlayerController>();
                 if(enemy != null)
                     enemy.Health -= damage;
-            }
-
-            if(other.tag == "Building")
-            {
-                Debug.Log("hi");
-                Turret enemy = other.GetComponent<Turret>();
-                if(enemy != null)
-                    enemy.Health -= damage;
+                Turret turret = other.GetComponent<Turret>();
+                if(turret != null)
+                    turret.Health -= damage;
             }
         }
     }

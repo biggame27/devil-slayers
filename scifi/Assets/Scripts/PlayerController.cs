@@ -117,6 +117,7 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
+
     }
 
     void OnFire()
