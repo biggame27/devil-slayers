@@ -31,6 +31,7 @@ public class TurretInfo : MonoBehaviour
 
     public void Sell()
     {
+        gameObject.SetActive(false);
         controller.Sell();
     }
 }

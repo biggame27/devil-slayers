@@ -97,7 +97,6 @@ public class Turret : MonoBehaviour
 
     void StopLaserFire()
     {
-        Debug.Log("hi");
         laser.StopFire();
     }
 

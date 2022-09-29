@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     public float followMoveSpeed = 0.4f;
     public Vector2 moveSpot;
     public HealthBar healthBar;
+    private Transform target;
 
     bool following = false;
     bool canMove = true;
@@ -79,20 +80,24 @@ public class Enemy : MonoBehaviour
         Vector3 currentPos = transform.position;
         foreach (Transform t in enemies)
         {
-            float dist = Vector3.Distance(t.position, currentPos);
-            if (dist < minDist)
+            if(t != null)
             {
-                tMin = t;
-                minDist = dist;
-                distance = minDist;
+                float dist = Vector3.Distance(t.position, currentPos);
+                if (dist < minDist)
+                {
+                    tMin = t;
+                    minDist = dist;
+                    distance = minDist;
+                }
             }
+            
         }
         return tMin;
     }
 
     void FollowPlayer()
     {
-        Transform target = GetClosestEnemy(turrets);
+        target = GetClosestEnemy(turrets);
         Vector2 direction = target.position - transform.position;
 
         if(distance < .14 && Mathf.Abs(direction.y) < .04)

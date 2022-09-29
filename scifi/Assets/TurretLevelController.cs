@@ -28,6 +28,6 @@ public class TurretLevelController : MonoBehaviour
 
     public void Sell()
     {
-        Destroy(transform.parent.gameObject);
+        Destroy(transform.gameObject);
     }
 }
