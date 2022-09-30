@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private Gold gold;
     [SerializeField]
     private GameObject turretInfo;
+    [SerializeField]
+    private PauseManager pauseManager;
 
     Ray ray;
     RaycastHit hit;
@@ -80,6 +82,21 @@ public class PlayerController : MonoBehaviour
             UnlockMovement();
             building = false;
         }
+    }
+    void OnSwitchMap()
+    {
+        pauseManager.OnClick();
+        if(pauseManager.paused)
+        {
+            playerInput.actions.FindActionMap("Player").Disable();
+            playerInput.actions.FindActionMap("UI").Enable();
+        }
+        else
+        {
+            playerInput.actions.FindActionMap("Player").Enable();
+            playerInput.actions.FindActionMap("UI").Disable();
+        }
+        
     }
     
     void FixedUpdate()

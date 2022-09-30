@@ -358,6 +358,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &501039844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501039835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3354515314ab7b647949f3734d82e559, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,16 +11898,16 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 131
       objectReference: {fileID: 0}
+    - target: {fileID: 2278393265901763169, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a38981fe76745ff4aa8874c7160ca245, type: 3}
     - target: {fileID: 2528695387813524788, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2528695387813524788, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3221687985772070977, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
-      propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3840991450046844310, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
@@ -11954,10 +11966,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 63.4272
       objectReference: {fileID: 0}
-    - target: {fileID: 4815080900893511334, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5291710550949201317, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_SizeDelta.x
       value: 142.1413
@@ -11992,11 +12000,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6346438711494202507, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 194.14
+      value: 217
       objectReference: {fileID: 0}
     - target: {fileID: 6346438711494202507, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -38
+      value: -56.99
       objectReference: {fileID: 0}
     - target: {fileID: 6521617660493318750, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_FontData.m_Font
