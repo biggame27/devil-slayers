@@ -115,9 +115,9 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("IsMoving", false);
         }
         if(movementInput.x > 0)
-            spriteRenderer.flipX = true;
-        else if(movementInput.x < 0)
             spriteRenderer.flipX = false;
+        else if(movementInput.x < 0)
+            spriteRenderer.flipX = true;
     }
 
     bool TryMove(Vector2 direction)
@@ -197,9 +197,9 @@ public class PlayerController : MonoBehaviour
     {
         LockMovement();
         if(spriteRenderer.flipX)
-            swordAttack.AttackRight();
-        else
             swordAttack.AttackLeft();
+        else
+            swordAttack.AttackRight();
     }
 
     void EndSwordAttack()

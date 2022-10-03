@@ -152,384 +152,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 851
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e83083f3b2a6b9b459755ad0407a7c19
-      internalID: 1404117624
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38e8af9b50d412c498c5e68b3e3bb4b3
-      internalID: -1686398732
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle2
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 211150c8adce7574ab5bc69661dbeb59
-      internalID: -1854519980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle3
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e5ba5d14b23a13b4c880134819605816
-      internalID: -1033573552
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle4
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9704211e3cfa7fd4299cf163390f0f62
-      internalID: -2143149537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle5
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a3f7426a0850114f8fd0585ec8be2fd
-      internalID: 560246240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle6
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86c983bb6a2aaf248b93a966fb06e5ad
-      internalID: -535529879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle7
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3de3f09d8ab65e4468a1b3ebf6e87263
-      internalID: -559257346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle8
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a77d6808d09fb6e41a27e266a1dcd923
-      internalID: -865961232
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_idle9
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 814
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70d4ef6eb627b0b489b87b399c91fec8
-      internalID: 1549969025
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_10
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 306b3bdbb47223b4084c35cbf089002b
-      internalID: -1025992125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_11
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 609b7572960abf84e9a3fb1a55481ed8
-      internalID: -155693196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_12
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ca59ef0c9e0bd5f4c9136c8474136b44
-      internalID: 225423150
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_13
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0de112f8bdc39644dafe3fcc6580a483
-      internalID: 1568973100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_14
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29782c68600a5f64ea4df2f8c88d9259
-      internalID: 477131046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_15
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fcf35f6b11baf754f9f4c046f1643a4b
-      internalID: -784751506
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_16
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7cbc090d17e9ebd49b5e9a6ecb9b4db5
-      internalID: -2120195421
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_17
-      rect:
-        serializedVersion: 2
-        x: 630
-        y: 777
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 181effe114da2d04c99d155888a59cc2
-      internalID: 528686536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sword Master Sprite Sheet 90x37_18
       rect:
         serializedVersion: 2
@@ -537,8 +159,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -558,8 +180,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -579,8 +201,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -600,8 +222,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -621,8 +243,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -642,8 +264,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -663,8 +285,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -684,8 +306,8 @@ TextureImporter:
         y: 740
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -698,15 +320,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_26
+      name: player_run1
       rect:
         serializedVersion: 2
         x: 0
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -719,15 +341,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_27
+      name: player_run2
       rect:
         serializedVersion: 2
         x: 90
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -740,15 +362,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_28
+      name: player_run3
       rect:
         serializedVersion: 2
         x: 180
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -761,15 +383,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_29
+      name: player_run4
       rect:
         serializedVersion: 2
         x: 270
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -782,15 +404,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_30
+      name: player_run5
       rect:
         serializedVersion: 2
         x: 360
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -803,15 +425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_31
+      name: player_run6
       rect:
         serializedVersion: 2
         x: 450
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -824,15 +446,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_32
+      name: player_run7
       rect:
         serializedVersion: 2
         x: 540
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -845,15 +467,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_33
+      name: player_run8
       rect:
         serializedVersion: 2
         x: 630
         y: 703
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -873,8 +495,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -894,8 +516,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -915,8 +537,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -936,8 +558,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -957,8 +579,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -978,8 +600,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -999,8 +621,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1020,8 +642,8 @@ TextureImporter:
         y: 666
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1041,8 +663,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1062,8 +684,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1083,8 +705,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1104,8 +726,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1125,8 +747,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1146,8 +768,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1167,8 +789,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1188,8 +810,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1209,8 +831,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1230,8 +852,8 @@ TextureImporter:
         y: 629
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1244,153 +866,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_52
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 430229d94784a3c48beae7b73132a3b4
-      internalID: 339460379
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_53
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09ef4f3bc139ac44691b9338d7bd161d
-      internalID: -149309505
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_54
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f03dc515dd5d7c14ea0916c1f1ded685
-      internalID: 1375278487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_55
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d84c46f5254fa24db1192f6448553ed
-      internalID: -1272905950
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_56
-      rect:
-        serializedVersion: 2
-        x: 360
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b2154b2d9aa0d84e8b8f27811acacfd
-      internalID: -735237392
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_57
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13ec9129998f90749ad4f0993bd9249a
-      internalID: 241374122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_58
-      rect:
-        serializedVersion: 2
-        x: 540
-        y: 592
-        width: 90
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 24ddca434406d8f40a7cbfb3f89e206f
-      internalID: -187301535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Sword Master Sprite Sheet 90x37_59
       rect:
         serializedVersion: 2
@@ -1398,8 +873,8 @@ TextureImporter:
         y: 555
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1419,8 +894,8 @@ TextureImporter:
         y: 555
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1440,8 +915,8 @@ TextureImporter:
         y: 555
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1461,8 +936,8 @@ TextureImporter:
         y: 555
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1482,8 +957,8 @@ TextureImporter:
         y: 555
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1503,8 +978,8 @@ TextureImporter:
         y: 518
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1524,8 +999,8 @@ TextureImporter:
         y: 518
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1545,8 +1020,8 @@ TextureImporter:
         y: 518
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1566,8 +1041,8 @@ TextureImporter:
         y: 518
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1587,8 +1062,8 @@ TextureImporter:
         y: 518
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1608,8 +1083,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1629,8 +1104,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1650,8 +1125,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1671,8 +1146,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1692,8 +1167,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1713,8 +1188,8 @@ TextureImporter:
         y: 481
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1734,8 +1209,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1755,8 +1230,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1776,8 +1251,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1797,8 +1272,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1818,8 +1293,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1839,8 +1314,8 @@ TextureImporter:
         y: 444
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1860,8 +1335,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1881,8 +1356,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1902,8 +1377,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1923,8 +1398,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1944,8 +1419,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1965,8 +1440,8 @@ TextureImporter:
         y: 407
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1986,8 +1461,8 @@ TextureImporter:
         y: 370
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2007,8 +1482,8 @@ TextureImporter:
         y: 370
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2028,8 +1503,8 @@ TextureImporter:
         y: 370
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2049,8 +1524,8 @@ TextureImporter:
         y: 333
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2070,8 +1545,8 @@ TextureImporter:
         y: 296
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2091,8 +1566,8 @@ TextureImporter:
         y: 296
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2112,8 +1587,8 @@ TextureImporter:
         y: 296
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2133,8 +1608,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2154,8 +1629,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2175,8 +1650,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2196,8 +1671,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2217,8 +1692,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2238,8 +1713,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2259,8 +1734,8 @@ TextureImporter:
         y: 259
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2280,8 +1755,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2301,8 +1776,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2322,8 +1797,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2343,8 +1818,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2364,8 +1839,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2385,8 +1860,8 @@ TextureImporter:
         y: 222
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2406,8 +1881,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2427,8 +1902,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2448,8 +1923,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2469,8 +1944,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2490,8 +1965,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2511,8 +1986,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2532,8 +2007,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2553,8 +2028,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2574,8 +2049,8 @@ TextureImporter:
         y: 185
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2595,8 +2070,8 @@ TextureImporter:
         y: 148
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2616,8 +2091,8 @@ TextureImporter:
         y: 148
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2637,8 +2112,8 @@ TextureImporter:
         y: 148
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2658,8 +2133,8 @@ TextureImporter:
         y: 148
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2679,8 +2154,8 @@ TextureImporter:
         y: 111
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2700,8 +2175,8 @@ TextureImporter:
         y: 111
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2721,8 +2196,8 @@ TextureImporter:
         y: 111
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2742,8 +2217,8 @@ TextureImporter:
         y: 111
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2763,8 +2238,8 @@ TextureImporter:
         y: 111
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2784,8 +2259,8 @@ TextureImporter:
         y: 74
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2805,8 +2280,8 @@ TextureImporter:
         y: 74
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2826,8 +2301,8 @@ TextureImporter:
         y: 74
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2847,8 +2322,8 @@ TextureImporter:
         y: 37
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2868,8 +2343,8 @@ TextureImporter:
         y: 37
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2889,8 +2364,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2910,8 +2385,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2931,8 +2406,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2952,8 +2427,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2973,8 +2448,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2994,8 +2469,8 @@ TextureImporter:
         y: 0
         width: 90
         height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3003,6 +2478,531 @@ TextureImporter:
       bones: []
       spriteID: a54f8b0516986544f8dd01b383c243d5
       internalID: 831679296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 851
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b5751a1efe9a2478e83b1ab018af1a
+      internalID: -1778048881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d1bf8c24f225b42886bab0e8b8d6b8
+      internalID: -1887146478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96acafdb24ac10d4faa7003683d7a64d
+      internalID: 756466572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca16df96b84c03247aa55a2d3555a98b
+      internalID: -380502353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5326214f5e77f47a74e5aea493b34b
+      internalID: 915019951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66f2c4be3b3fae4a926d8567855ca25
+      internalID: 1725347181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ebf54f59affb343800149d712f5ca5
+      internalID: 1018881237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4252dabbebe075449af792f1bb1bcbba
+      internalID: -1855298956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle8
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ddf1ed6007fc3e4284c0b4cfa81c717
+      internalID: -1491605060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_idle9
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 814
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce804b2aed69f1a4fa70d9c122486721
+      internalID: 973342899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2f9c409278fcd44a5d718fe83755da
+      internalID: 421516964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_11
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cae8c6142671014182630ca7740fc85
+      internalID: 1758439722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_12
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b842658a6e1389844bebca1f98194bf8
+      internalID: 848972260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_13
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859efa9d2a3b31149b996d3cd04a3ced
+      internalID: 1627120162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af0b9eafa5b80b449f8b6cfaedb7c40
+      internalID: 1639460038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_15
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f80e3ab515b3f44a6f5a13169990ef
+      internalID: 1772757578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_16
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc8a24dbaa77a247903915d3aeb7f30
+      internalID: -182695552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword Master Sprite Sheet 90x37_17
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 777
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a26669a1e7e6504fa09ddedc60164d9
+      internalID: -834172394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 591
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274c7118114f1df42afa2a2c156677a4
+      internalID: 369286344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431bfe3146ade4940af90560e15e2f06
+      internalID: 1903757054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b869297626d530640a9b3a826c938d25
+      internalID: 1239649363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack4
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756682b0517f88048860f78bedb4560e
+      internalID: -1307385016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack5
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3063868939ad5b43ba46050a46b4e68
+      internalID: 769941559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack6
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1b1d1608aaca045aa9d9286aa05916
+      internalID: -1531376475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player_attack7
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 592
+        width: 90
+        height: 37
+      alignment: 9
+      pivot: {x: 0.3, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82b7d7305c07ae4592fc2e309ec24d6
+      internalID: -780786321
       vertices: []
       indices: 
       edges: []
@@ -3018,109 +3018,109 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      player_idle8: -865961232
+      player_idle8: -1491605060
       Sword Master Sprite Sheet 90x37_20: -817568629
       Sword Master Sprite Sheet 90x37_81: 1498080330
       Sword Master Sprite Sheet 90x37_75: 51413644
-      Sword Master Sprite Sheet 90x37_32: -227799065
+      player_attack4: -1307385016
       Sword Master Sprite Sheet 90x37_69: -353854117
       Sword Master Sprite Sheet 90x37_46: -1094252707
       Sword Master Sprite Sheet 90x37_36: 1489530595
       Sword Master Sprite Sheet 90x37_82: 868382918
-      Sword Master Sprite Sheet 90x37_56: -735237392
       Sword Master Sprite Sheet 90x37_51: 844928880
-      Sword Master Sprite Sheet 90x37_54: 1375278487
       Sword Master Sprite Sheet 90x37_107: 342335138
       Sword Master Sprite Sheet 90x37_104: 1961472498
-      Sword Master Sprite Sheet 90x37_31: -1993066859
-      player_idle7: -559257346
+      player_idle7: -1855298956
       Sword Master Sprite Sheet 90x37_115: 2077275356
       Sword Master Sprite Sheet 90x37_134: -1420325281
       Sword Master Sprite Sheet 90x37_71: -70079278
       Sword Master Sprite Sheet 90x37_40: -816655879
-      Sword Master Sprite Sheet 90x37_12: 225423150
+      Sword Master Sprite Sheet 90x37_12: 848972260
       Sword Master Sprite Sheet 90x37_111: -593636212
       Sword Master Sprite Sheet 90x37_83: 1479613
       Sword Master Sprite Sheet 90x37_64: 11147661
-      Sword Master Sprite Sheet 90x37_28: 540464501
+      player_attack5: 769941559
       Sword Master Sprite Sheet 90x37_106: 2041571882
-      Sword Master Sprite Sheet 90x37_29: -942321887
       Sword Master Sprite Sheet 90x37_95: -112132473
+      player_run8: 1458063467
       Sword Master Sprite Sheet 90x37_122: 1375241364
-      Sword Master Sprite Sheet 90x37_16: -2120195421
-      Sword Master Sprite Sheet 90x37_53: -149309505
+      Sword Master Sprite Sheet 90x37_16: -182695552
       Sword Master Sprite Sheet 90x37_89: 1027039056
-      Sword Master Sprite Sheet 90x37_33: 1458063467
+      player_run3: 540464501
       Sword Master Sprite Sheet 90x37_109: 1860457492
+      player_attack6: -1531376475
+      player_run2: -1063782641
       Sword Master Sprite Sheet 90x37_97: -436833662
-      Sword Master Sprite Sheet 90x37_10: -1025992125
+      Sword Master Sprite Sheet 90x37_10: 421516964
       Sword Master Sprite Sheet 90x37_128: 817457915
       Sword Master Sprite Sheet 90x37_85: -666548105
-      Sword Master Sprite Sheet 90x37_27: -1063782641
-      Sword Master Sprite Sheet 90x37_110: 2116342991
-      Sword Master Sprite Sheet 90x37_73: 1188979346
-      Sword Master Sprite Sheet 90x37_43: 1631875216
       Sword Master Sprite Sheet 90x37_80: 1937666840
+      Sword Master Sprite Sheet 90x37_43: 1631875216
+      Sword Master Sprite Sheet 90x37_73: 1188979346
+      Sword Master Sprite Sheet 90x37_110: 2116342991
       Sword Master Sprite Sheet 90x37_42: 210420478
       Sword Master Sprite Sheet 90x37_130: 1651131513
       Sword Master Sprite Sheet 90x37_108: -1827142155
-      Sword Master Sprite Sheet 90x37_15: -784751506
+      Sword Master Sprite Sheet 90x37_15: 1772757578
       Sword Master Sprite Sheet 90x37_74: -76080913
+      player_run7: -227799065
       Sword Master Sprite Sheet 90x37_93: 292409963
       Sword Master Sprite Sheet 90x37_92: -545343940
       Sword Master Sprite Sheet 90x37_119: 1377328177
       Sword Master Sprite Sheet 90x37_49: -1339192586
-      Sword Master Sprite Sheet 90x37_13: 1568973100
-      Sword Master Sprite Sheet 90x37_55: -1272905950
+      Sword Master Sprite Sheet 90x37_13: 1627120162
+      Sword Master Sprite Sheet 90x37_78: -946152248
       Sword Master Sprite Sheet 90x37_76: -1872596947
       Sword Master Sprite Sheet 90x37_114: 1180671876
-      Sword Master Sprite Sheet 90x37_78: -946152248
+      Sword Master Sprite Sheet 90x37_79: 1343927128
       Sword Master Sprite Sheet 90x37_60: 1627476001
       Sword Master Sprite Sheet 90x37_44: 945979907
-      Sword Master Sprite Sheet 90x37_79: 1343927128
       Sword Master Sprite Sheet 90x37_68: -606711293
-      player_idle3: -1033573552
+      player_idle3: -380502353
       Sword Master Sprite Sheet 90x37_65: 183674637
       Sword Master Sprite Sheet 90x37_86: -274642919
       Sword Master Sprite Sheet 90x37_50: -1425420810
       Sword Master Sprite Sheet 90x37_113: -1031560517
-      Sword Master Sprite Sheet 90x37_58: -187301535
+      player_run1: -960841798
+      player_run4: -942321887
       Sword Master Sprite Sheet 90x37_18: 1884835406
+      player_run6: -1993066859
       Sword Master Sprite Sheet 90x37_121: 745844992
       Sword Master Sprite Sheet 90x37_105: 424973392
       Sword Master Sprite Sheet 90x37_48: -128515151
-      Sword Master Sprite Sheet 90x37_17: 528686536
+      Sword Master Sprite Sheet 90x37_17: -834172394
       Sword Master Sprite Sheet 90x37_39: 1796572926
       Sword Master Sprite Sheet 90x37_101: 560922962
       Sword Master Sprite Sheet 90x37_37: 910593742
       Sword Master Sprite Sheet 90x37_90: 425159217
       Sword Master Sprite Sheet 90x37_129: 812942129
-      player_idle4: -2143149537
+      player_idle4: 915019951
       Sword Master Sprite Sheet 90x37_87: -685371465
-      Sword Master Sprite Sheet 90x37_30: -2073518507
       Sword Master Sprite Sheet 90x37_61: 370433369
       Sword Master Sprite Sheet 90x37_131: -228563185
       Sword Master Sprite Sheet 90x37_19: 764111410
+      player_idle9: 973342899
+      Sword Master Sprite Sheet 90x37_11: 1758439722
+      player_idle5: 1725347181
       Sword Master Sprite Sheet 90x37_22: 839150278
-      player_idle9: 1549969025
-      Sword Master Sprite Sheet 90x37_11: -155693196
-      player_idle5: 560246240
       Sword Master Sprite Sheet 90x37_66: -899768387
       Sword Master Sprite Sheet 90x37_117: 864067876
+      player_attack2: 1903757054
       Sword Master Sprite Sheet 90x37_116: 1438642076
       Sword Master Sprite Sheet 90x37_63: 1757363392
       Sword Master Sprite Sheet 90x37_24: -1348776727
-      Sword Master Sprite Sheet 90x37_26: -960841798
       Sword Master Sprite Sheet 90x37_103: 1007242907
       Sword Master Sprite Sheet 90x37_77: -1953882051
       Sword Master Sprite Sheet 90x37_126: -588492447
       Sword Master Sprite Sheet 90x37_23: 738722696
+      player_attack3: 1239649363
       Sword Master Sprite Sheet 90x37_84: 73653959
-      player_idle2: -1854519980
+      player_idle2: 756466572
       Sword Master Sprite Sheet 90x37_25: 714936966
       Sword Master Sprite Sheet 90x37_88: -166818220
       Sword Master Sprite Sheet 90x37_96: -715598599
       Sword Master Sprite Sheet 90x37_120: 4826037
+      player_attack7: -780786321
       Sword Master Sprite Sheet 90x37_94: 1552245774
       Sword Master Sprite Sheet 90x37_21: 586594036
       Sword Master Sprite Sheet 90x37_35: -11633549
@@ -3130,25 +3130,25 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_100: -1888647282
       Sword Master Sprite Sheet 90x37_47: -1297458416
       Sword Master Sprite Sheet 90x37_112: 2074081443
-      player: 1404117624
-      player_idle1: -1686398732
+      player: -1778048881
+      player_idle1: -1887146478
       Sword Master Sprite Sheet 90x37_72: -194352204
       Sword Master Sprite Sheet 90x37_127: 688774908
-      player_idle6: -535529879
+      player_idle6: 1018881237
       Sword Master Sprite Sheet 90x37_132: -1388412016
       Sword Master Sprite Sheet 90x37_118: 514120040
-      Sword Master Sprite Sheet 90x37_57: 241374122
       Sword Master Sprite Sheet 90x37_124: -1321806674
       Sword Master Sprite Sheet 90x37_102: 2084058740
       Sword Master Sprite Sheet 90x37_99: -2124524765
       Sword Master Sprite Sheet 90x37_41: 1378780107
-      Sword Master Sprite Sheet 90x37_52: 339460379
-      Sword Master Sprite Sheet 90x37_62: -192705493
       Sword Master Sprite Sheet 90x37_133: 500136120
+      Sword Master Sprite Sheet 90x37_62: -192705493
+      player_run5: -2073518507
       Sword Master Sprite Sheet 90x37_123: 1328038297
+      player_attack1: 369286344
       Sword Master Sprite Sheet 90x37_38: -936015419
       Sword Master Sprite Sheet 90x37_34: -1638926247
-      Sword Master Sprite Sheet 90x37_14: 477131046
+      Sword Master Sprite Sheet 90x37_14: 1639460038
       Sword Master Sprite Sheet 90x37_91: 49641672
       Sword Master Sprite Sheet 90x37_98: 399762937
       Sword Master Sprite Sheet 90x37_125: -958654232

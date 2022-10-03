@@ -11751,6 +11751,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 555134403698482609, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 555134403698482609, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Size.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 555134403698482609, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1778048881, guid: 981a1baf52cfe8141911e06983ec743d, type: 3}
+    - target: {fileID: 555134403698482609, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 611618999054431987, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_SizeDelta.x
       value: 295
@@ -11783,10 +11799,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurretPicture
       objectReference: {fileID: 0}
-    - target: {fileID: 4274216854442593696, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.020019531
-      objectReference: {fileID: 0}
     - target: {fileID: 4590372659734655981, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_SizeDelta.x
       value: 295.7528
@@ -11802,6 +11814,26 @@ PrefabInstance:
     - target: {fileID: 4590372659734655981, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 63.4272
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815080900893511334, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815080900893511334, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815080900893511334, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099342578911674935, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Size.x
+      value: 0.50736487
+      objectReference: {fileID: 0}
+    - target: {fileID: 5099342578911674935, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.04452772
       objectReference: {fileID: 0}
     - target: {fileID: 6042638983104088585, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_IsActive
