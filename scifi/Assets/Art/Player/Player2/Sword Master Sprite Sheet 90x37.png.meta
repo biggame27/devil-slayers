@@ -971,7 +971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_64
+      name: player_2attack1
       rect:
         serializedVersion: 2
         x: 0
@@ -992,10 +992,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_65
+      name: player_2attack2
       rect:
         serializedVersion: 2
-        x: 90
+        x: 89
         y: 518
         width: 90
         height: 37
@@ -1013,7 +1013,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_66
+      name: player_2attack3
       rect:
         serializedVersion: 2
         x: 180
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_67
+      name: player_2attack4
       rect:
         serializedVersion: 2
         x: 270
@@ -1055,10 +1055,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sword Master Sprite Sheet 90x37_68
+      name: player_2attack5
       rect:
         serializedVersion: 2
-        x: 360
+        x: 359
         y: 518
         width: 90
         height: 37
@@ -2865,7 +2865,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 591
+        y: 592
         width: 90
         height: 37
       alignment: 9
@@ -3022,6 +3022,7 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_20: -817568629
       Sword Master Sprite Sheet 90x37_81: 1498080330
       Sword Master Sprite Sheet 90x37_75: 51413644
+      player_2attack3: -899768387
       player_attack4: -1307385016
       Sword Master Sprite Sheet 90x37_69: -353854117
       Sword Master Sprite Sheet 90x37_46: -1094252707
@@ -3038,7 +3039,6 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_12: 848972260
       Sword Master Sprite Sheet 90x37_111: -593636212
       Sword Master Sprite Sheet 90x37_83: 1479613
-      Sword Master Sprite Sheet 90x37_64: 11147661
       player_attack5: 769941559
       Sword Master Sprite Sheet 90x37_106: 2041571882
       Sword Master Sprite Sheet 90x37_95: -112132473
@@ -3053,12 +3053,14 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_97: -436833662
       Sword Master Sprite Sheet 90x37_10: 421516964
       Sword Master Sprite Sheet 90x37_128: 817457915
+      player_2attack4: 486538012
       Sword Master Sprite Sheet 90x37_85: -666548105
-      Sword Master Sprite Sheet 90x37_80: 1937666840
-      Sword Master Sprite Sheet 90x37_43: 1631875216
-      Sword Master Sprite Sheet 90x37_73: 1188979346
       Sword Master Sprite Sheet 90x37_110: 2116342991
+      Sword Master Sprite Sheet 90x37_73: 1188979346
+      Sword Master Sprite Sheet 90x37_43: 1631875216
+      Sword Master Sprite Sheet 90x37_80: 1937666840
       Sword Master Sprite Sheet 90x37_42: 210420478
+      player_2attack1: 11147661
       Sword Master Sprite Sheet 90x37_130: 1651131513
       Sword Master Sprite Sheet 90x37_108: -1827142155
       Sword Master Sprite Sheet 90x37_15: 1772757578
@@ -3075,9 +3077,7 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_79: 1343927128
       Sword Master Sprite Sheet 90x37_60: 1627476001
       Sword Master Sprite Sheet 90x37_44: 945979907
-      Sword Master Sprite Sheet 90x37_68: -606711293
       player_idle3: -380502353
-      Sword Master Sprite Sheet 90x37_65: 183674637
       Sword Master Sprite Sheet 90x37_86: -274642919
       Sword Master Sprite Sheet 90x37_50: -1425420810
       Sword Master Sprite Sheet 90x37_113: -1031560517
@@ -3095,15 +3095,16 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_90: 425159217
       Sword Master Sprite Sheet 90x37_129: 812942129
       player_idle4: 915019951
+      player_2attack2: 183674637
       Sword Master Sprite Sheet 90x37_87: -685371465
       Sword Master Sprite Sheet 90x37_61: 370433369
       Sword Master Sprite Sheet 90x37_131: -228563185
       Sword Master Sprite Sheet 90x37_19: 764111410
       player_idle9: 973342899
+      player_2attack5: -606711293
       Sword Master Sprite Sheet 90x37_11: 1758439722
       player_idle5: 1725347181
       Sword Master Sprite Sheet 90x37_22: 839150278
-      Sword Master Sprite Sheet 90x37_66: -899768387
       Sword Master Sprite Sheet 90x37_117: 864067876
       player_attack2: 1903757054
       Sword Master Sprite Sheet 90x37_116: 1438642076
@@ -3152,7 +3153,6 @@ TextureImporter:
       Sword Master Sprite Sheet 90x37_91: 49641672
       Sword Master Sprite Sheet 90x37_98: 399762937
       Sword Master Sprite Sheet 90x37_125: -958654232
-      Sword Master Sprite Sheet 90x37_67: 486538012
       Sword Master Sprite Sheet 90x37_59: -1105613832
   spritePackingTag: 
   pSDRemoveMatte: 0

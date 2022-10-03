@@ -2972,7 +2972,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &3070820100647503027
@@ -3026,6 +3026,7 @@ MonoBehaviour:
   gold: {fileID: 1126165908689224463}
   turretInfo: {fileID: 6042638983104088585}
   pauseManager: {fileID: 2834519899826209612}
+  inputDeadZone: 0.19
   movementFilter:
     useTriggers: 0
     useLayerMask: 0

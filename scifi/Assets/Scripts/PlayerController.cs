@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     private GameObject turretInfo;
     [SerializeField]
     private PauseManager pauseManager;
+    [SerializeField]
+    private float inputDeadZone;
 
     Ray ray;
     RaycastHit hit;
@@ -101,7 +103,7 @@ public class PlayerController : MonoBehaviour
     
     void FixedUpdate()
     {
-        if(canMove && movementInput != Vector2.zero)
+        if(canMove && !float.IsNaN(movementInput.magnitude) && movementInput != Vector2.zero)
         {
             bool success = TryMove(movementInput);
             if(!success)
@@ -134,6 +136,8 @@ public class PlayerController : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
+        if(movementInput.magnitude < inputDeadZone)
+            movementInput = Vector2.zero;
 
     }
 
@@ -142,7 +146,7 @@ public class PlayerController : MonoBehaviour
         if(!building)
         {
             UnlockMovement();
-            animator.SetTrigger("Attack");
+            animator.SetTrigger("Attack" +  (int)Random.Range(1f, 3f));
         }
         else
         {
