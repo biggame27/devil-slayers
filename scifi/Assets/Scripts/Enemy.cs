@@ -16,7 +16,8 @@ public class Enemy : MonoBehaviour
     public Score score;
 
     public float minX, maxX, minY, maxY;
-    public float health;
+    public float initHealth;
+    private float health;
     private float maxHealth;
     public int worth = 1;
     [SerializeField]
@@ -26,6 +27,8 @@ public class Enemy : MonoBehaviour
     public Vector2 moveSpot;
     public HealthBar healthBar;
     private Transform target;
+    [SerializeField]
+    private float enemyScaling;
 
     bool following = false;
     bool canMove = true;
@@ -49,11 +52,12 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
-        maxHealth = health;
         turrets = GameObject.Find("Turrets").transform;
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
+        health = initHealth * ((score.GetScore()/10)*enemyScaling+1);
+        maxHealth = health;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();

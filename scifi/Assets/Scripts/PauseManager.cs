@@ -11,9 +11,12 @@ public class PauseManager : MonoBehaviour
     private Canvas canvas;
     [SerializeField]
     private Canvas pauseCanvas;
+    [SerializeField]
+    private Canvas deathCanvas;
     public void Start()
     {
         pauseCanvas.GetComponent<Canvas>().enabled = false;
+        deathCanvas.GetComponent<Canvas>().enabled =false;
     }
 
     public void OnClick()
@@ -28,6 +31,14 @@ public class PauseManager : MonoBehaviour
     {
         canvas.GetComponent<Canvas>().enabled = false;
         pauseCanvas.GetComponent<Canvas>().enabled = true;
+        Time.timeScale = 0;
+        paused = true;
+    }
+
+    public void Death()
+    {
+        canvas.GetComponent<Canvas>().enabled = false;
+        deathCanvas.GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0;
         paused = true;
     }

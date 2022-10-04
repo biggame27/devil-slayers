@@ -146,7 +146,7 @@ public class PlayerController : MonoBehaviour
         if(!building)
         {
             UnlockMovement();
-            animator.SetTrigger("Attack" +  (int)Random.Range(1f, 3f));
+            animator.SetTrigger("Attack" +  (int)Random.Range(1f, 5f));
         }
         else
         {
@@ -226,6 +226,11 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("Defeated");
         LockMovement();
+    }
+
+    public void Death()
+    {
+        pauseManager.Death();
     }
 
     public Vector2 GetCoords()
