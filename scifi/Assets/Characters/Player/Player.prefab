@@ -171,7 +171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3758058265666856173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &858578187714875035
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2218,7 +2218,7 @@ GameObject:
   - component: {fileID: 8199713314134113203}
   - component: {fileID: 650419978893559098}
   - component: {fileID: 6996056911233781810}
-  - component: {fileID: 8699587667873693374}
+  - component: {fileID: 2612756076297088707}
   m_Layer: 5
   m_Name: Attack
   m_TagString: Untagged
@@ -2243,8 +2243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -85.83789, y: 60.14502}
-  m_SizeDelta: {x: 200.11, y: 187.88}
+  m_AnchoredPosition: {x: -55.376, y: 25.3318}
+  m_SizeDelta: {x: 261.0335, y: 257.5063}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &2412614179445931934
 CanvasRenderer:
@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 703aa664a99862e41ac0a94978a8353b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2341,7 +2341,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &8699587667873693374
+--- !u!114 &2612756076297088707
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2350,9 +2350,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5137625896411660987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3354515314ab7b647949f3734d82e559, type: 3}
+  m_Script: {fileID: 11500000, guid: d91d8be4d4791d14f8d14da43d4de5f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  images:
+  - {fileID: 21300000, guid: 703aa664a99862e41ac0a94978a8353b, type: 3}
+  - {fileID: 21300000, guid: 002dd9a760a35a24db3d36fac9505bc4, type: 3}
 --- !u!1 &5566591967082043395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3190,8 +3193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 807.9, y: -106}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 532.1, y: -333.43}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2356376347854777508
 CanvasRenderer:
@@ -3221,7 +3224,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c6b6373039d3d7f4e81bba8466554000, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3463,10 +3466,13 @@ MonoBehaviour:
   followTarget: {fileID: 0}
   buildings:
   - {fileID: 5159565714746809850, guid: b08065b008dea9449bcaaaf370eadd9c, type: 3}
+  sprites: []
   gold: {fileID: 1126165908689224463}
   turretInfo: {fileID: 6042638983104088585}
   pauseManager: {fileID: 2834519899826209612}
   inputDeadZone: 0.19
+  inventory: {fileID: 3513285625645899214}
+  fireButton: {fileID: 5137625896411660987}
   movementFilter:
     useTriggers: 0
     useLayerMask: 0

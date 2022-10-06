@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour
     private PauseManager pauseManager;
     [SerializeField]
     private float inputDeadZone;
+    [SerializeField]
+    private GameObject inventory;
+    [SerializeField]
+    private GameObject fireButton;
 
     Ray ray;
     RaycastHit hit;
@@ -69,6 +73,7 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerInput = GetComponent<PlayerInput>();
         turretStorage = GameObject.Find("Turrets").transform;
+        inventory.SetActive(false);
         maxHealth = health;
     }
 
@@ -80,12 +85,16 @@ public class PlayerController : MonoBehaviour
             followTarget.ChangeSprite(sprites[0]);
             placingCheck.enabled = true;
             building = true;
+            inventory.SetActive(true);
+            fireButton.GetComponent<ChangeButton>().SwapBuild();
             LockMovement();
         }else
         {
             turretInfo.SetActive(false);
             placingCheck.enabled = false;
+            inventory.SetActive(false);
             UnlockMovement();
+            fireButton.GetComponent<ChangeButton>().SwapFire();
             building = false;
         }
     }
