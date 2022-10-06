@@ -26,6 +26,7 @@ public class Turret : MonoBehaviour
     private Bullet bullet;
 
     private float maxHealth; 
+    private float range = 5f;
     public HealthBar healthBar;
     public float damage;
 
@@ -72,7 +73,7 @@ public class Turret : MonoBehaviour
         foreach (Transform t in enemies)
         {
             float dist = Vector3.Distance(t.position, currentPos);
-            if (dist < minDist)
+            if (dist < minDist && dist < range)
             {
                 tMin = t;
                 minDist = dist;

@@ -54,5 +54,10 @@ public class FollowTarget : MonoBehaviour
         return results.Count > 0;
     }
 
+    public void ChangeSprite(Sprite pic)
+    {
+        spriteRenderer.sprite = pic;
+    }
+
     
 }

@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour
     {
         damage = transform.parent.gameObject.GetComponent<Turret>().damage;
         transform.position += transform.up*Time.deltaTime*moveSpeed;
-        if(transform.position.x < -3 || transform.position.x > 3 || transform.position.y < -1.5 || transform.position.y > 1.5)
+        if(transform.position.x < -6.1 || transform.position.x > 6.1 || transform.position.y < -3.4 || transform.position.y > 3.4)
             Destroy(gameObject);
     }
 

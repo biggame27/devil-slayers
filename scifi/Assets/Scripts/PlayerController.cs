@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
     private PlayerInput playerInput;
     [SerializeField]
     private FollowTarget followTarget;
-    public GameObject turret;
+    public GameObject[] buildings;
+    public Sprite[] sprites; 
     [SerializeField]
     private Gold gold;
     [SerializeField]
@@ -59,6 +60,7 @@ public class PlayerController : MonoBehaviour
 
     bool canMove = true;
     bool building = false;
+    int objInd = -1;
 
     void Start()
     {
@@ -74,6 +76,8 @@ public class PlayerController : MonoBehaviour
     {
         if(!building)
         {
+            objInd = -1;
+            followTarget.ChangeSprite(sprites[0]);
             placingCheck.enabled = true;
             building = true;
             LockMovement();
@@ -99,6 +103,15 @@ public class PlayerController : MonoBehaviour
             playerInput.actions.FindActionMap("UI").Disable();
         }
         
+    }
+
+    public void OnSwitchBuilding(string obj)
+    {
+        if(obj == "Turret")
+        {
+            objInd = 0;
+            followTarget.ChangeSprite(sprites[1]);
+        }
     }
     
     void FixedUpdate()
@@ -152,8 +165,11 @@ public class PlayerController : MonoBehaviour
         {
             if(!IsTouchingMouse() && gold.GetGold() >= 5)
             {
-                Instantiate(turret, followTarget.newCoords, Quaternion.identity, turretStorage);
-                gold.SubtractGold(5);
+                if(objInd != -1)
+                {
+                    Instantiate(buildings[objInd], followTarget.newCoords, Quaternion.identity, turretStorage);
+                    gold.SubtractGold(5);
+                }
             }
         }
     }
