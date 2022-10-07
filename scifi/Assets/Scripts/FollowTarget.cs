@@ -17,6 +17,14 @@ public class FollowTarget : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(Touchscreen.current.primaryTouch != null && !IsPointerOverUIObject())
+        {
+            pos = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
+            float timesX = Mathf.Round(pos.x/0.16f);
+            float timesY = Mathf.Round(pos.y/0.16f);
+            newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
+            transform.position = new Vector3(newCoords.x, newCoords.y, 0);
+        }
         if(player.GetCanBuild())
         {
             
@@ -29,11 +37,11 @@ public class FollowTarget : MonoBehaviour
             if(Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue() != pos))
                 player.IsTouchingMouse();
             */
-            pos = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
-            float timesX = Mathf.Round(pos.x/0.16f);
-            float timesY = Mathf.Round(pos.y/0.16f);
-            newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
-            transform.position = new Vector3(newCoords.x, newCoords.y, 0);
+            // pos = Camera.main.ScreenToWorldPoint(Touchscreen.current.primaryTouch.position.ReadValue());
+            // float timesX = Mathf.Round(pos.x/0.16f);
+            // float timesY = Mathf.Round(pos.y/0.16f);
+            // newCoords = new Vector2(0.16f * timesX, 0.16f * timesY);
+            // transform.position = new Vector3(newCoords.x, newCoords.y, 0);
             if(!player.IsTouchingMouse())
                 spriteRenderer.enabled = true;
             else
@@ -43,10 +51,13 @@ public class FollowTarget : MonoBehaviour
         {
             spriteRenderer.enabled = false;
         }
+        player.IsTouchingMouse();
         
     }
 
     private bool IsPointerOverUIObject() {
+        if(Touchscreen.current.primaryTouch == null)
+            return false;
         PointerEventData eventDataCurrentPosition = new PointerEventData(EventSystem.current);
         eventDataCurrentPosition.position = new Vector2(Touchscreen.current.primaryTouch.position.ReadValue().x, Touchscreen.current.primaryTouch.position.ReadValue().y);
         List<RaycastResult> results = new List<RaycastResult>();

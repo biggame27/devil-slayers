@@ -3466,7 +3466,9 @@ MonoBehaviour:
   followTarget: {fileID: 0}
   buildings:
   - {fileID: 5159565714746809850, guid: b08065b008dea9449bcaaaf370eadd9c, type: 3}
-  sprites: []
+  sprites:
+  - {fileID: 0}
+  - {fileID: 21300000, guid: 5ed68cfdd44c91b4dad2a95c7371e7d8, type: 3}
   gold: {fileID: 1126165908689224463}
   turretInfo: {fileID: 6042638983104088585}
   pauseManager: {fileID: 2834519899826209612}
