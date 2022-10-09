@@ -121,6 +121,12 @@ public class PlayerController : MonoBehaviour
             objInd = 0;
             followTarget.ChangeSprite(sprites[1]);
         }
+
+        if(obj == "LaserTurret")
+        {
+            objInd = 1;
+            followTarget.ChangeSprite(sprites[2]);
+        }
     }
     
     void FixedUpdate()

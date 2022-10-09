@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagCheck: Enemy
-  moveSpeed: 1
+  moveSpeed: 4
 --- !u!61 &100441245879187927
 BoxCollider2D:
   m_ObjectHideFlags: 0
