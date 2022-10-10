@@ -15,7 +15,7 @@ J:/HarrisonStuff/Unity/2020.3.30f1/scifi/scifi
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59001
+57442
 Successfully changed project path to: J:/HarrisonStuff/Unity/2020.3.30f1/scifi/scifi
 J:/HarrisonStuff/Unity/2020.3.30f1/scifi/scifi
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ J:/HarrisonStuff/Unity/2020.3.30f1/scifi/scifi
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 355.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 425.63 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.3f1 (af2e63e8f9bd)
 [Subsystems] Discovering subsystems at path J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -63,7 +63,7 @@ Initialize mono
 Mono path[0] = 'J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -71,47 +71,48 @@ Register platform support module: J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/
 Register platform support module: J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: J:/HarrisonStuff/Unity/2021.3.3f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.009823 seconds.
+Registered in 0.015966 seconds.
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
+[usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 354.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 374.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.194 seconds
+- Completed reload, in  1.528 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1194ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1529ms)
+		BeginReloadAssembly (141ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (945ms)
-			LoadAssemblies (105ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1158ms)
+			LoadAssemblies (139ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (163ms)
+			SetupTypeCache (245ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (675ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (751ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (97ms)
+				InitializePlatformSupportModulesInManaged (107ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (355ms)
+				RefreshPlugins (375ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (150ms)
-				ProcessInitializeOnLoadMethodAttributes (70ms)
+				ProcessInitializeOnLoadAttributes (181ms)
+				ProcessInitializeOnLoadMethodAttributes (86ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013016 seconds.
+Registered in 0.012438 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -120,556 +121,46 @@ Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 325.06 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 382.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.177 seconds
+- Completed reload, in  2.520 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2178ms)
-		BeginReloadAssembly (261ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (133ms)
-		EndReloadAssembly (1780ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (97ms)
-			SetupLoadedEditorAssemblies (1135ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (32ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (325ms)
-				BeforeProcessingInitializeOnLoad (310ms)
-				ProcessInitializeOnLoadAttributes (412ms)
-				ProcessInitializeOnLoadMethodAttributes (50ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 1.38 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4579 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 59 unused Assets / (298.4 KB). Loaded Objects now: 5032.
-Memory consumption went from 172.7 MB to 172.4 MB.
-Total: 4.601600 ms (FindLiveObjects: 0.407000 ms CreateObjectMapping: 0.188600 ms MarkObjects: 3.690700 ms  DeleteObjects: 0.313700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1996.689526 seconds.
-  path: Assets/ChangeButton.cs
-  artifactKey: Guid(d91d8be4d4791d14f8d14da43d4de5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ChangeButton.cs using Guid(d91d8be4d4791d14f8d14da43d4de5f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b947c6eb26fb0caf57d3510a301e5ff') in 0.040004 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.790503 seconds.
-  path: Assets/Characters/Player/Player.prefab
-  artifactKey: Guid(18e3b7382b3bec34d8aa58dc69950c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Characters/Player/Player.prefab using Guid(18e3b7382b3bec34d8aa58dc69950c63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b9c7191c3dd5cff8170c802c18f3ad') in 0.329037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.452213 seconds.
-  path: Assets/Turrets/Bullet.prefab
-  artifactKey: Guid(ae16869871076bc4aa18d5522932b676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Bullet.prefab using Guid(ae16869871076bc4aa18d5522932b676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d39986d7615708adb2e4273966df70') in 0.032042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 112.942442 seconds.
-  path: Assets/Turrets/BulletTurret 1.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret 1.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd5098af415ded4e5d2bb8f09dae70f6') in 0.031450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.862507 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a80d4f7f743cd81ab330c2b9f63f20a5') in 0.031283 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 52.721571 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c98f0bc64b44acba010cbe3f49fbd66') in 0.019877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 439.493972 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Camo
-  artifactKey: Guid(6586a5cbf17ab044fa11825b63dd94fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Camo using Guid(6586a5cbf17ab044fa11825b63dd94fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e9e2281aa8575f6aa17891491c0fb5') in 0.007689 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.396860 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue
-  artifactKey: Guid(0afdbe59513147a4b81a8bbb1f85b0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue using Guid(0afdbe59513147a4b81a8bbb1f85b0e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14b9d1e8dd96e9c1177c0e706169ced') in 0.007336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.859897 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Purple
-  artifactKey: Guid(41b93b04cf803af4d85947a065b11cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Purple using Guid(41b93b04cf803af4d85947a065b11cdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ac2dc42d91b489f6c9daea48e40341') in 0.006138 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.257056 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_halftrack.gif
-  artifactKey: Guid(e973011e74a766d4aae6647576f962a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_halftrack.gif using Guid(e973011e74a766d4aae6647576f962a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5793159c3f42593ce1a7d9d8bf8ee83') in 0.092670 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.129511 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_halftrack.png
-  artifactKey: Guid(7acfd8835a39c0d498d201d38f91be6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_halftrack.png using Guid(7acfd8835a39c0d498d201d38f91be6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f8a876ee23bf0f4f942ab7ccc4d1b8e') in 0.021458 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.069915 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_tracks.png
-  artifactKey: Guid(036772418395b8644945e71cf8443fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_tracks.png using Guid(036772418395b8644945e71cf8443fbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a92f4f39f6ac18681f846a3d7b0808a') in 0.018727 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.628629 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_tracks.gif
-  artifactKey: Guid(d2f21cf9403f5484f80e38e0aa8d21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Bodies/body_tracks.gif using Guid(d2f21cf9403f5484f80e38e0aa8d21c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c482858b5e3ce777356f7b7517721f') in 0.012816 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.397738 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers
-  artifactKey: Guid(58ee2041f831b874994af5f43203a0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers using Guid(58ee2041f831b874994af5f43203a0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cca47078a51bea53554a6b903852dc') in 0.005977 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.236442 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_blank.png
-  artifactKey: Guid(5dc194c73c3399d47bc60eb6016198d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_blank.png using Guid(5dc194c73c3399d47bc60eb6016198d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea53fdb00acf59317009f13446ba59a') in 0.065493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.889427 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_grass_dark_1.png
-  artifactKey: Guid(73b06256e7215ae4ba9c9fc0226ab728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_grass_dark_1.png using Guid(73b06256e7215ae4ba9c9fc0226ab728) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbb7ed80f08f6f28fd945ba91ef2ae9c') in 0.052041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.171146 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_grass_dark_2.png
-  artifactKey: Guid(d0aa6f9f7c3f03e41930394986853b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Towers/towers_walls_grass_dark_2.png using Guid(d0aa6f9f7c3f03e41930394986853b45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8af4450f941cf681d380b51aad1e24b') in 0.053005 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.165921 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons
-  artifactKey: Guid(858c0d95893d6624fabc27a418f09709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons using Guid(858c0d95893d6624fabc27a418f09709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68b79c2694386425a001bcbb0eccb91') in 0.006137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.381474 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.gif
-  artifactKey: Guid(a80c1203787773c4d9ce648ed9967c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.gif using Guid(a80c1203787773c4d9ce648ed9967c2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '601f5faf0609c875968fee303b9e8c40') in 0.017433 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.869646 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.gif
-  artifactKey: Guid(d3483b990365dd1408078773563647e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.gif using Guid(d3483b990365dd1408078773563647e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaebbcdc7bcd05ce61ac7b6d5bc40961') in 0.016315 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.551516 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.gif
-  artifactKey: Guid(53d66c7e81af017409bc98b87d92b5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.gif using Guid(53d66c7e81af017409bc98b87d92b5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0dd7cb166518a8b1a5518d28de17dea') in 0.047659 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.633724 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/weapons.png
-  artifactKey: Guid(556553d7ce979894a9f312d2e7df8f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/weapons.png using Guid(556553d7ce979894a9f312d2e7df8f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c586b2284119d3a09cad955a1f463e3') in 0.029272 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.886554 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png
-  artifactKey: Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png using Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56a00becf0f8d384ce0011dbcc7910f9') in 0.032844 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.305649 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png
-  artifactKey: Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png using Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f7883c68dbe8368c0758ed41c032782') in 0.028892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.960697 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png
-  artifactKey: Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png using Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6d7ba5870c43f953459ce697dbe8c05') in 0.021914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.745284 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.gif
-  artifactKey: Guid(53d66c7e81af017409bc98b87d92b5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.gif using Guid(53d66c7e81af017409bc98b87d92b5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3253220f5a9e4b9f65cff94ffd985d') in 0.012556 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.059334 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.gif
-  artifactKey: Guid(d3483b990365dd1408078773563647e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.gif using Guid(d3483b990365dd1408078773563647e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2d79288cbb5f72875961afdbbdda07') in 0.012287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.922189 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png
-  artifactKey: Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png using Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e75b3160002b803a30141e864b67b8') in 0.010971 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 52.153243 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png
-  artifactKey: Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk1.png using Guid(955d3f5a99e52c74d88a8273d3b52396) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16e3374860dfc0828e46633fb322d5c') in 0.050643 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 79.565341 seconds.
-  path: Assets/Turrets/BulletTurretLevel1
-  artifactKey: Guid(d82528653c556ff44b513350c2c15dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel1 using Guid(d82528653c556ff44b513350c2c15dd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814ebb35ba3c78ce58cb016d739d1a55') in 0.006434 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.953139 seconds.
-  path: Assets/Turrets/BulletTurretLevel2
-  artifactKey: Guid(ab49c4c944ae72f4d9a998e46640d160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel2 using Guid(ab49c4c944ae72f4d9a998e46640d160) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e8b3657afe8af3adccc645974547ed') in 0.006425 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.232563 seconds.
-  path: Assets/Turrets/BulletTurretLevel3
-  artifactKey: Guid(dbd8b837af9082c4bb64cef80825bd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel3 using Guid(dbd8b837af9082c4bb64cef80825bd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa0cc1363147a148023a5ae998e255c7') in 0.006917 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 63.225346 seconds.
-  path: Assets/Turrets/LaserTurretLevel1
-  artifactKey: Guid(54c70f6c5bebf684b8d61d2308d582d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel1 using Guid(54c70f6c5bebf684b8d61d2308d582d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c41e5de522824d2f5cf0f93c95358b8') in 0.006378 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.062768 seconds.
-  path: Assets/Turrets/LaserTurretLevel2
-  artifactKey: Guid(bb21ea278aa3fe645819b3203c69ab5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel2 using Guid(bb21ea278aa3fe645819b3203c69ab5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a249da49164a07033860a1ab62c19ce') in 0.006050 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.376758 seconds.
-  path: Assets/Turrets/BulletTurretLevel4
-  artifactKey: Guid(2b07e170b2c06034d91b50e14632fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4 using Guid(2b07e170b2c06034d91b50e14632fa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5e89d6aa4edf0cd15a9e381912cc261') in 0.005709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 53.606636 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller
-  artifactKey: Guid(4235777752cb8e342917c8eed125a053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller using Guid(4235777752cb8e342917c8eed125a053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25a812b581ace77ce34cc4fa4fb1a32e') in 0.010874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.599428 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/Animation
-  artifactKey: Guid(23dc87c5889879b43a3683c316b37bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/Animation using Guid(23dc87c5889879b43a3683c316b37bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9852573d522aed01a6a010768de895d7') in 0.006095 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.200601 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4 1.controller
-  artifactKey: Guid(e50de53970930114dae6bebbca68a955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4 1.controller using Guid(e50de53970930114dae6bebbca68a955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8393ad47fa0220ad28a6cc6cc846d1b9') in 0.006952 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.782451 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller
-  artifactKey: Guid(4235777752cb8e342917c8eed125a053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller using Guid(4235777752cb8e342917c8eed125a053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c9cc2a1bfae07afd4d8ed1f18b41396') in 0.002995 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.196939 seconds.
-  path: Assets/Turrets/BulletTurretLevel3/AC_level3.controller
-  artifactKey: Guid(93714ac670e91614f9e88f5fe33b7458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel3/AC_level3.controller using Guid(93714ac670e91614f9e88f5fe33b7458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9d405153d8aba140e4550f33ca610b') in 0.007360 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.679642 seconds.
-  path: Assets/Turrets/BulletTurretLevel3/AC_level3 1.controller
-  artifactKey: Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel3/AC_level3 1.controller using Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbdad671a88be6c5a1087d953118f06a') in 0.007487 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.223489 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller
-  artifactKey: Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller using Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ad1adefc8952afb04c5f7ec6025728') in 0.003522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.665125 seconds.
-  path: Assets/Turrets/BulletTurretLevel3/Animation/turret_charge.anim
-  artifactKey: Guid(132d9f328b3df33499678009e78a1999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel3/Animation/turret_charge.anim using Guid(132d9f328b3df33499678009e78a1999) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb3d3cce3120198f9f3ae1bd44f7fca') in 0.020559 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 345.489657 seconds.
-  path: Assets/Turrets/BulletTurretLevel5
-  artifactKey: Guid(1ce0b861c7eb3a5448031950d4b05574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel5 using Guid(1ce0b861c7eb3a5448031950d4b05574) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab73fcf78c636b1493c3498d07604a1d') in 0.006745 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.199291 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4 1.controller
-  artifactKey: Guid(b13114a35f932d44d8a70d25ee527aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4 1.controller using Guid(b13114a35f932d44d8a70d25ee527aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4428ba10f4a6580ac65e42fca902a66') in 0.003423 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.526946 seconds.
-  path: Assets/Turrets/BulletTurretLevel5/Animation
-  artifactKey: Guid(a08e03e2ee0573545996439bf75d3c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel5/Animation using Guid(a08e03e2ee0573545996439bf75d3c47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8e4d75e39022c86ad0b74167e835f2') in 0.001919 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.435166 seconds.
-  path: Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel5.controller
-  artifactKey: Guid(b13114a35f932d44d8a70d25ee527aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel5.controller using Guid(b13114a35f932d44d8a70d25ee527aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2855519c4eecd3799bfd82a5d20d8f56') in 0.007408 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 91.213007 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller
-  artifactKey: Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/AC_BulletTurretLevel4.controller using Guid(2c032ef3264de6441bf741021d024bb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47ee2684c0a24d2f5aee851bfa4300d') in 0.004343 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 70.966390 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/Animation/turret_charge.anim
-  artifactKey: Guid(d66de74678c6dbf43b2c764cc8000c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/Animation/turret_charge.anim using Guid(d66de74678c6dbf43b2c764cc8000c0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61458e30e540d2d641f3af673ac7824f') in 0.003198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.811023 seconds.
-  path: Assets/Turrets/BulletTurretLevel4/Animation/turret_idle.anim
-  artifactKey: Guid(cfd799ba2c9d0634d8133f5422ea4990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel4/Animation/turret_idle.anim using Guid(cfd799ba2c9d0634d8133f5422ea4990) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de68a4812f632ef599f6eb3d503c72a') in 0.006787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 65.205432 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png
-  artifactKey: Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png using Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ab34ac84bc24e836883b55faa277eba') in 0.013846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.008984 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png
-  artifactKey: Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk2.png using Guid(0a5a7fa56e724594a8113a989c90f0e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa61e940e8e7aafab21c07db607f2b99') in 0.050019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.802649 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.png
-  artifactKey: Guid(c015208bc72fb41439f4ab5679d9ddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.png using Guid(c015208bc72fb41439f4ab5679d9ddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bd6df6830fd8c1acf04c6b74e71557') in 0.011250 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.463235 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.png
-  artifactKey: Guid(c015208bc72fb41439f4ab5679d9ddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk3.png using Guid(c015208bc72fb41439f4ab5679d9ddd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5908bf9e6529e0a31438afe8c7010fe') in 0.046021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.879381 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk4.png
-  artifactKey: Guid(a2b6ce0729c23d04fa9650ed83938e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk4.png using Guid(a2b6ce0729c23d04fa9650ed83938e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1857c37b758f6414cc65883060230594') in 0.011987 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.241937 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk4.png
-  artifactKey: Guid(a2b6ce0729c23d04fa9650ed83938e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_01_mk4.png using Guid(a2b6ce0729c23d04fa9650ed83938e17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e980f887a5374e0fbaacfd46bc09e0b') in 0.048667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.231053 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.png
-  artifactKey: Guid(3fe0b1b26ff185748b6fb4ef21dbe49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.png using Guid(3fe0b1b26ff185748b6fb4ef21dbe49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1a3c7b84d46081229bd447aa23eadb6') in 0.014233 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 66.252097 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.png
-  artifactKey: Guid(3fe0b1b26ff185748b6fb4ef21dbe49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.png using Guid(3fe0b1b26ff185748b6fb4ef21dbe49f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d89b88ad4a93f875878bdfa5061ab6') in 0.054240 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.054591 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk2.png
-  artifactKey: Guid(9a88e4113897f3649a1a55fe5da2cb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk2.png using Guid(9a88e4113897f3649a1a55fe5da2cb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d00cacc5a61db66c2ceae0c6bfa66b') in 0.011638 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.186196 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk2.png
-  artifactKey: Guid(9a88e4113897f3649a1a55fe5da2cb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk2.png using Guid(9a88e4113897f3649a1a55fe5da2cb2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b697f5de0d85e8560136e2beb07ac14e') in 0.062531 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.645642 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.gif
-  artifactKey: Guid(9840b44208ab2074c852b279940e6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.gif using Guid(9840b44208ab2074c852b279940e6323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7d88d1245c6aecf2e11082070621030') in 0.019797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.466323 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.png
-  artifactKey: Guid(3723092eab8f87544ac6f2327fd512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.png using Guid(3723092eab8f87544ac6f2327fd512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9ab616d9a8246c142e6753bf062acae') in 0.011057 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.826819 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.png
-  artifactKey: Guid(3723092eab8f87544ac6f2327fd512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk3.png using Guid(3723092eab8f87544ac6f2327fd512c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15d61e236320e65a1b03fc3c4e0b8504') in 0.060661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.209041 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png
-  artifactKey: Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png using Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f75da7f0f16090b3a2492ea66cb3eb57') in 0.011119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.866363 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png
-  artifactKey: Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk4.png using Guid(a0ba63b7e59ee324e8d712e3a4b72d4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cef9258d8dcabed581775416fd74ae') in 0.054365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 322.895855 seconds.
-  path: Assets/Turrets/BulletTurretLevel6
-  artifactKey: Guid(6df951d292ce0c7418282849257b325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel6 using Guid(6df951d292ce0c7418282849257b325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470adae57e0f525478e0bef08909f1df') in 0.006128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.220838 seconds.
-  path: Assets/Turrets/BulletTurretLevel6/Animation
-  artifactKey: Guid(fde28a1d34811b4459877ba85e360515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel6/Animation using Guid(fde28a1d34811b4459877ba85e360515) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '257fffd5682da13df37444188f3fe05e') in 0.001981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.972134 seconds.
-  path: Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel5 1.controller
-  artifactKey: Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel5 1.controller using Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '929114136188fbc5d21c3386566ef730') in 0.007572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.102358 seconds.
-  path: Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel6.controller
-  artifactKey: Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel5/AC_BulletTurretLevel6.controller using Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d701aa4c1aa360b109b0d624a8e9180') in 0.007384 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 547.379458 seconds.
-  path: Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.gif
-  artifactKey: Guid(5c774e03fd4390143a14d7659621ee4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/ground_shaker_asset/ground_shaker_asset/Blue/Weapons/turret_02_mk1.gif using Guid(5c774e03fd4390143a14d7659621ee4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6174439fceb5033008a734c902a0c346') in 0.014914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.741771 seconds.
-  path: Assets/Turrets/BulletTurretLevel6/AC_BulletTurretLevel6 1.controller
-  artifactKey: Guid(a60332b51bd64f745808f044842e37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel6/AC_BulletTurretLevel6 1.controller using Guid(a60332b51bd64f745808f044842e37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384d1f26c02219dc0143ab8da14a8a3f') in 0.008473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.936770 seconds.
-  path: Assets/Turrets/BulletTurretLevel7
-  artifactKey: Guid(0ff7d7e75f8c6ce489488058e668e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel7 using Guid(0ff7d7e75f8c6ce489488058e668e4d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca7f0b9eff6bd005e71ec7cd2ba1541c') in 0.008101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.234635 seconds.
-  path: Assets/Turrets/BulletTurretLevel7/Animation
-  artifactKey: Guid(c178a7264d74d914c9895562815ad09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel7/Animation using Guid(c178a7264d74d914c9895562815ad09d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5986e8a8797f011b412bcdea7ede776b') in 0.003507 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.393676 seconds.
-  path: Assets/Turrets/BulletTurretLevel7/AC_BulletTurretLevel7.controller
-  artifactKey: Guid(a60332b51bd64f745808f044842e37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel7/AC_BulletTurretLevel7.controller using Guid(a60332b51bd64f745808f044842e37dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1bf4c7a7851fbad7687e47d1838456') in 0.007306 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.626552 seconds.
-  path: Assets/Turrets/BulletTurretLevel6/AC_BulletTurretLevel6.controller
-  artifactKey: Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurretLevel6/AC_BulletTurretLevel6.controller using Guid(475dbb8bf4164f24fb95a475b1b05610) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '964628584bfd8848705a23a1ee18fc15') in 0.003519 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010148 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.584 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1585ms)
-		BeginReloadAssembly (199ms)
+	ReloadAssembly (2521ms)
+		BeginReloadAssembly (277ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1255ms)
-			LoadAssemblies (142ms)
+			CreateAndSetChildDomain (134ms)
+		EndReloadAssembly (2064ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (373ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (73ms)
-			SetupLoadedEditorAssemblies (625ms)
+			SetupTypeCache (428ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (101ms)
+			SetupLoadedEditorAssemblies (1329ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (41ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (163ms)
-				ProcessInitializeOnLoadAttributes (368ms)
-				ProcessInitializeOnLoadMethodAttributes (46ms)
-				AfterProcessingInitializeOnLoad (5ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (383ms)
+				BeforeProcessingInitializeOnLoad (321ms)
+				ProcessInitializeOnLoadAttributes (515ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.56 ms, found 4 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.85 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4560 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (267.3 KB). Loaded Objects now: 5073.
-Memory consumption went from 175.9 MB to 175.7 MB.
-Total: 4.371200 ms (FindLiveObjects: 0.379200 ms CreateObjectMapping: 0.170600 ms MarkObjects: 3.567800 ms  DeleteObjects: 0.252200 ms)
+Unloading 4582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 59 unused Assets / (298.3 KB). Loaded Objects now: 5035.
+Memory consumption went from 172.8 MB to 172.5 MB.
+Total: 4.492800 ms (FindLiveObjects: 0.420000 ms CreateObjectMapping: 0.269400 ms MarkObjects: 3.559600 ms  DeleteObjects: 0.241800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -681,279 +172,4 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-[usbmuxd] Send listen message
 [usbmuxd] Attached: 2 00008030-001259283AEA802E
-========================================================================
-Received Import Request.
-  Time since last request: 579.048259 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1315726134f4edfe58f9ebe80e4b14') in 0.118166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.508936 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bd44bb3b15cde5c1ecac57865bb90f1') in 0.034531 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.641561 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f31d3b1b3cda5d5ac507ce2fbff9a0d7') in 0.033401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.895662 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce966a299d14264c9b7be1230c60ed4') in 0.031925 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 108.076150 seconds.
-  path: Assets/Scenes/Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '049c253f95de1eec314af98d743dc559') in 0.006500 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 89.873828 seconds.
-  path: Assets/Scripts/FollowTarget.cs
-  artifactKey: Guid(28705d7bb7d0e6542a3332107e06c0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FollowTarget.cs using Guid(28705d7bb7d0e6542a3332107e06c0a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5d5269b4c2cbcc389aa9f1f81dd66a') in 0.006458 seconds 
-[usbmuxd] Detached: 2 00008030-001259283AEA802E
-[usbmuxd] Attached: 3 00008030-001259283AEA802E
-========================================================================
-Received Import Request.
-  Time since last request: 379.863478 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5488f3ec87684fd972081f1475d5155f') in 0.023599 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 76.082566 seconds.
-  path: Assets/Turrets/LaserTurretLevel3
-  artifactKey: Guid(6621b46ccd5ad1b4b805064c44e7cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel3 using Guid(6621b46ccd5ad1b4b805064c44e7cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcad0e3a4aa2ea82fe5de6df0f38e4a6') in 0.007003 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 55.704758 seconds.
-  path: Assets/Turrets/LaserTurretLevel3/Animation
-  artifactKey: Guid(f0b7c33c3b684644792d3049db394abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel3/Animation using Guid(f0b7c33c3b684644792d3049db394abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67ec6387aaccd24d339a524bb7bbf260') in 0.002223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.634297 seconds.
-  path: Assets/Turrets/LaserTurretLevel2/AC_level5.controller
-  artifactKey: Guid(72b5a57d90279c646869708dc27728fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel2/AC_level5.controller using Guid(72b5a57d90279c646869708dc27728fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2814cf17e11a79e00d96ac2f800ceae8') in 0.008256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.838046 seconds.
-  path: Assets/Turrets/LaserTurretLevel2/AC_level5 1.controller
-  artifactKey: Guid(92dcfead5ebbd6e429df7acd3cbf0517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel2/AC_level5 1.controller using Guid(92dcfead5ebbd6e429df7acd3cbf0517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c546fde85afdf9665fcec71288d7405a') in 0.007595 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.917669 seconds.
-  path: Assets/Turrets/LaserTurretLevel3/AC_LaserTurretLevel3.controller
-  artifactKey: Guid(92dcfead5ebbd6e429df7acd3cbf0517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel3/AC_LaserTurretLevel3.controller using Guid(92dcfead5ebbd6e429df7acd3cbf0517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90d3c423041593733792ffc05e7d4783') in 0.008023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 257.654960 seconds.
-  path: Assets/Turrets/LaserTurretLevel4
-  artifactKey: Guid(04aae59d2a42e2e42a3d77d34ff74a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel4 using Guid(04aae59d2a42e2e42a3d77d34ff74a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e88c4c8eeadf48a5fbd1bcda83d43bc') in 0.006187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.616886 seconds.
-  path: Assets/Turrets/LaserTurretLevel4/Animation
-  artifactKey: Guid(7b04bce1cc0085a438e58aafff9387d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel4/Animation using Guid(7b04bce1cc0085a438e58aafff9387d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7105a98d1313c8c2a32e33da05488207') in 0.001945 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 101.606029 seconds.
-  path: Assets/Turrets/LaserTurretLevel3/AC_LaserTurretLevel3 1.controller
-  artifactKey: Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel3/AC_LaserTurretLevel3 1.controller using Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52f7b36a9b45f610faeb79f94eb6dfc4') in 0.008179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.079182 seconds.
-  path: Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4.controller
-  artifactKey: Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4.controller using Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90f1ce517e0968991732d9e33a3305e6') in 0.007035 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 498.631562 seconds.
-  path: Assets/Turrets/LaserTurretLevel5
-  artifactKey: Guid(2d648958ee3273c40ad550a3ce769ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel5 using Guid(2d648958ee3273c40ad550a3ce769ace) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99c137ff16ab24f3f860c73dcebd502b') in 0.006720 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.771697 seconds.
-  path: Assets/Turrets/LaserTurretLevel5/Animatin
-  artifactKey: Guid(47505c53739982b49842408ed4bd0e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel5/Animatin using Guid(47505c53739982b49842408ed4bd0e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7dbd8ed5ad215eaaea04ebf8e9d208c') in 0.005949 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.603958 seconds.
-  path: Assets/Turrets/LaserTurretLevel5/Animation
-  artifactKey: Guid(47505c53739982b49842408ed4bd0e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel5/Animation using Guid(47505c53739982b49842408ed4bd0e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b55de36771bfbc544fc2a50d09cd6e1') in 0.001908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.746969 seconds.
-  path: Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4 1.controller
-  artifactKey: Guid(cfc6d597f0f63fa4c8cf9943f1fb5730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4 1.controller using Guid(cfc6d597f0f63fa4c8cf9943f1fb5730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298d80460c5f272451ec1027e938a80f') in 0.009393 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.840646 seconds.
-  path: Assets/Turrets/LaserTurretLevel5/AC_LaserTurretLevel5.controller
-  artifactKey: Guid(cfc6d597f0f63fa4c8cf9943f1fb5730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel5/AC_LaserTurretLevel5.controller using Guid(cfc6d597f0f63fa4c8cf9943f1fb5730) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998ffa9f42ed62b3958ab71db1379cf5') in 0.006892 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.806666 seconds.
-  path: Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4.controller
-  artifactKey: Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel4/AC_LaserTurretLevel4.controller using Guid(5b14690ec35699b47b301cbab63f7552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398c967f770e641ccd916afed82277d1') in 0.003604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 360.563265 seconds.
-  path: Assets/Turrets/LaserTurretLevel6
-  artifactKey: Guid(5073c6edb8daaa041a0eafcc74fe53b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel6 using Guid(5073c6edb8daaa041a0eafcc74fe53b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be95e53ce27fc5271cd477a834ca56d3') in 0.007661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.981173 seconds.
-  path: Assets/Turrets/LaserTurretLevel6/Animation
-  artifactKey: Guid(f5e2a5b408ba5534189bc7a2a52f8f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel6/Animation using Guid(f5e2a5b408ba5534189bc7a2a52f8f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb0b709d2cb1a5e0f9c62c13766f796') in 0.001957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.035577 seconds.
-  path: Assets/Turrets/LaserTurretLevel6/AC_LaserTurretLevel6.controller
-  artifactKey: Guid(be0b5ebbba2492740a38d578ca35ee3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel6/AC_LaserTurretLevel6.controller using Guid(be0b5ebbba2492740a38d578ca35ee3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe5b767ca1cf1236849fb6182ef44ee') in 0.006671 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 116.682445 seconds.
-  path: Assets/Turrets/LaserTurretLevel6/Animation/LaserTurretLevel6.anim
-  artifactKey: Guid(3410a096212d1b54e81823d551f997ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurretLevel6/Animation/LaserTurretLevel6.anim using Guid(3410a096212d1b54e81823d551f997ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd8763104842f4904b78c106fc5ccf9c') in 0.002895 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010848 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image J:\HarrisonStuff\Unity\2020.3.30f1\scifi\scifi\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.49 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.715 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1716ms)
-		BeginReloadAssembly (176ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (50ms)
-		EndReloadAssembly (1424ms)
-			LoadAssemblies (130ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (394ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (88ms)
-			SetupLoadedEditorAssemblies (733ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (48ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (189ms)
-				ProcessInitializeOnLoadAttributes (428ms)
-				ProcessInitializeOnLoadMethodAttributes (59ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.87 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4560 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (265.4 KB). Loaded Objects now: 5088.
-Memory consumption went from 175.9 MB to 175.7 MB.
-Total: 5.410000 ms (FindLiveObjects: 0.385800 ms CreateObjectMapping: 0.176300 ms MarkObjects: 4.638500 ms  DeleteObjects: 0.207800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-[usbmuxd] Detached: 3 00008030-001259283AEA802E
-[usbmuxd] Attached: 4 00008030-001259283AEA802E
-========================================================================
-Received Import Request.
-  Time since last request: 8187.094278 seconds.
-  path: Assets/Art/Robot Warfare Asset Pack 22-11-24
-  artifactKey: Guid(fad5ce2c03f937c4db87b951aa264fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Robot Warfare Asset Pack 22-11-24 using Guid(fad5ce2c03f937c4db87b951aa264fd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53c043f3a3bf78cc406de3693d196c6') in 0.022105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 122.259614 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc68b7036b40e8dd1528d4bbd65abb4') in 0.107254 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 923.822491 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9eafe9ac17148e7c4a6fd1311f352d9') in 0.036055 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 43.290608 seconds.
-  path: Assets/Turrets/Bullet.prefab
-  artifactKey: Guid(ae16869871076bc4aa18d5522932b676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/Bullet.prefab using Guid(ae16869871076bc4aa18d5522932b676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc73684936b6b70a736127419f8f6735') in 0.018493 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1171.636690 seconds.
-  path: Assets/Turrets/BulletTurret.prefab
-  artifactKey: Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/BulletTurret.prefab using Guid(b08065b008dea9449bcaaaf370eadd9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2991ff993e4babd6d7f2f2fe42c0579') in 0.036220 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 280.422103 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c916a11252def36ca2d896a9ccc59e13') in 0.041743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.078556 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64b9a3731c37323316e53d715c8a647a') in 0.033772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.408755 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b141386aca32e7da05e7b66d0fdca304') in 0.034454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.824556 seconds.
-  path: Assets/Turrets/LaserTurret.prefab
-  artifactKey: Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Turrets/LaserTurret.prefab using Guid(6d73414b11517644bad528918e81b492) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f29258984c5a5c45cac942f927ec014') in 0.035174 seconds 

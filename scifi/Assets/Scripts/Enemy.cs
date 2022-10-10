@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     GameObject player;
+    public GameObject goldDrop;
     private float distance;
 
     Animator animator;
@@ -27,6 +28,7 @@ public class Enemy : MonoBehaviour
     public Vector2 moveSpot;
     public HealthBar healthBar;
     private Transform target;
+    Transform goldStorage;
     [SerializeField]
     private float enemyScaling;
 
@@ -52,6 +54,7 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        goldStorage = GameObject.Find("Golds").transform;
         turrets = GameObject.Find("Turrets").transform;
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
@@ -199,6 +202,7 @@ public class Enemy : MonoBehaviour
     public void Defeated()
     {
         animator.SetTrigger("Defeated");
+        Instantiate(goldDrop, transform.position, Quaternion.identity, goldStorage);
         LockMovement();
     }
 

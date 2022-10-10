@@ -12,7 +12,6 @@ public class Score : MonoBehaviour
     public void AddScore(int change)
     {
         score += change;
-        gold.AddGold(change);
         SetScore();
     }
 

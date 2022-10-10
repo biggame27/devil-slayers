@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0571d223916d0e468f07d0a4218f5dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldDrop: {fileID: 2521507796331305973, guid: 64c223f40cb888a4e99b584f38eb16c2, type: 3}
   swordAttack: {fileID: 5402072862795051638}
   enemySpawner: {fileID: 0}
   score: {fileID: 0}
@@ -263,6 +264,7 @@ MonoBehaviour:
   followMoveSpeed: 0.4
   moveSpot: {x: 0, y: 0}
   healthBar: {fileID: 4740272755495235021}
+  goldStorage: {fileID: 0}
   enemyScaling: 1.5
 --- !u!50 &8086174282104575565
 Rigidbody2D:
