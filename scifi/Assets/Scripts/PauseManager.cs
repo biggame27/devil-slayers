@@ -15,8 +15,8 @@ public class PauseManager : MonoBehaviour
     private Canvas deathCanvas;
     public void Start()
     {
-        pauseCanvas.GetComponent<Canvas>().enabled = false;
-        deathCanvas.GetComponent<Canvas>().enabled =false;
+        pauseCanvas.enabled = false;
+        deathCanvas.enabled =false;
     }
 
     public void OnClick()
@@ -29,8 +29,9 @@ public class PauseManager : MonoBehaviour
 
     public void PauseGame()
     {
-        canvas.GetComponent<Canvas>().enabled = false;
-        pauseCanvas.GetComponent<Canvas>().enabled = true;
+        canvas.enabled = false;
+        pauseCanvas.enabled = true;
+        Debug.Log(canvas.enabled);
         Time.timeScale = 0;
         paused = true;
     }
@@ -61,5 +62,17 @@ public class PauseManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Stop()
+    {
+        Time.timeScale = 0;
+        canvas.GetComponent<Canvas>().enabled = false;
+    }
+
+    public void Begin()
+    {
+        Time.timeScale = 1;
+        canvas.GetComponent<Canvas>().enabled = true;
     }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public HealthBar healthBar;
     private PlayerInput playerInput;
+    private Transform golds;
     [SerializeField]
     private FollowTarget followTarget;
     public GameObject[] buildings;
@@ -62,12 +64,14 @@ public class PlayerController : MonoBehaviour
     Vector2 movementInput;
     Rigidbody2D rb;
 
+    public GameObject pickUI;
     bool canMove = true;
     bool building = false;
     int objInd = -1;
 
     void Start()
     {
+        golds = GameObject.Find("Golds").transform;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -148,6 +152,7 @@ public class PlayerController : MonoBehaviour
             spriteRenderer.flipX = false;
         else if(movementInput.x < 0)
             spriteRenderer.flipX = true;
+        CheckPickable();
     }
 
     bool TryMove(Vector2 direction)
@@ -272,5 +277,32 @@ public class PlayerController : MonoBehaviour
     public bool GetCanBuild()
     {
         return building;
+    }
+
+    public void PickUp()
+    {
+        foreach (Transform t in golds)
+        {
+            GoldDrop drop = t.gameObject.GetComponent<GoldDrop>();
+            if(drop.GetAllowed())
+            {
+                drop.PickUp();
+                break;
+            }
+        }
+    }
+
+    public void CheckPickable()
+    {
+        foreach (Transform t in golds)
+        {
+            GoldDrop drop = t.gameObject.GetComponent<GoldDrop>();
+            if(drop.GetAllowed())
+            {
+                pickUI.GetComponent<Image>().enabled = true;
+                return;
+            }
+        }
+        pickUI.GetComponent<Image>().enabled = false;
     }
 }

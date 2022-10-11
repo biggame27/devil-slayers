@@ -9,8 +9,7 @@ public class TestPage : MonoBehaviour
 {
     public Text japchar;
     public Text timing;
-    public Canvas deathUI;
-    public Canvas UI;
+    public PauseManager pauseManager;
     Gold gold;
     
     int maxTime = 20;
@@ -98,7 +97,7 @@ public class TestPage : MonoBehaviour
     {
         runDown = true;
         Time.timeScale = 0;
-        UI.enabled = false;
+        pauseManager.Stop();
         GetComponent<Canvas>().enabled = true;
         timer = maxTime;
         //StartCoroutine(ClockTick());
@@ -202,7 +201,8 @@ public class TestPage : MonoBehaviour
         choices[playerGuess].transform.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
         choices[correctChoice].transform.GetChild(1).gameObject.GetComponent<Image>().enabled = false;
         GetComponent<Canvas>().enabled = false;
-        UI.enabled = true;
+        pauseManager.Begin();
         Time.timeScale = 1;
+        showingAnswers = false;
     }
 }

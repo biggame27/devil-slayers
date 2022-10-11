@@ -221,6 +221,17 @@ Transform:
   m_Father: {fileID: 1598292061}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &267864270 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1405038735291365842, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+  m_PrefabInstance: {fileID: 6892755081160053445}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7f71e369bd7841a83064573b316ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331831122
 GameObject:
   m_ObjectHideFlags: 0
@@ -12376,7 +12387,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1126165908689224463, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: gold
-      value: 999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2528695387813524788, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12386,6 +12397,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2834519899826209612, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
+      propertyPath: testPage
+      value: 
+      objectReference: {fileID: 267864270}
     - target: {fileID: 3741439509778986062, guid: 18e3b7382b3bec34d8aa58dc69950c63, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
