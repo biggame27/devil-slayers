@@ -178,7 +178,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if(!IsTouchingMouse() && gold.GetGold() >= 5)
+            if(!IsTouchingMouse() && gold.GetGold() >= 10)
             {
                 if(objInd != -1)
                 {

@@ -35,4 +35,11 @@ public class TurretLevelController : MonoBehaviour
     {
         return level;
     }
+
+    public int GetCost()
+    {
+        if(level-1 == upgradeCosts.Length)
+            return 69;
+        return upgradeCosts[level-1];
+    }
 }

@@ -9,6 +9,8 @@ public class TurretInfo : MonoBehaviour
     TurretLevelController controller;
     [SerializeField]
     private Image turretImage;
+    [SerializeField]
+    private Text cost;
     void Start()
     {
         gameObject.SetActive(false);
@@ -24,12 +26,28 @@ public class TurretInfo : MonoBehaviour
     public void SetController(TurretLevelController _controller)
     {
         controller = _controller;
+        if(controller.GetCost() == 69)
+        {
+            cost.text = "MAX";
+        }
+        else
+        {
+            cost.text = "Upgrade: "+controller.GetCost();
+        }
         GetSprite();
     }
 
     public void LevelUp()
     {
         controller.LevelUp();
+        if(controller.GetCost() == 69)
+        {
+            cost.text = "MAX";
+        }
+        else
+        {
+            cost.text = "Upgrade: "+controller.GetCost();
+        }
         GetSprite();
     }
 

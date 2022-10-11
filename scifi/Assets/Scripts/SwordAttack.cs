@@ -53,6 +53,9 @@ public class SwordAttack : MonoBehaviour
                 Turret turret = other.GetComponent<Turret>();
                 if(turret != null)
                     turret.Health -= damage;
+                Beacon beacon = other.GetComponent<Beacon>();
+                if(beacon != null)
+                    beacon.Health -= damage;
             }
         }
     }

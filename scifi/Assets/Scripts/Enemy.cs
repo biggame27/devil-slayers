@@ -33,6 +33,7 @@ public class Enemy : MonoBehaviour
     private float enemyScaling;
 
     bool following = false;
+    bool defeated =false;
     bool canMove = true;
     
     public float Health
@@ -59,7 +60,7 @@ public class Enemy : MonoBehaviour
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
-        health = initHealth * ((score.GetScore()/10)*enemyScaling+1);
+        health = initHealth * ((score.GetScore()/1000)*enemyScaling+1);
         maxHealth = health;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -201,15 +202,20 @@ public class Enemy : MonoBehaviour
 
     public void Defeated()
     {
-        animator.SetTrigger("Defeated");
-        Instantiate(goldDrop, transform.position, Quaternion.identity, goldStorage);
-        LockMovement();
+        if(!defeated)
+        {
+            defeated = true;
+            animator.SetTrigger("Defeated");
+            Instantiate(goldDrop, transform.position, Quaternion.identity, goldStorage);
+            LockMovement();
+        }
+        
     }
 
     public void RemoveEnemy()
     {
         enemySpawner.GetComponent<EnemySpawner>().currentMobs -= 1;
-        score.AddScore(worth);
+        score.AddScore(worth*100);
         Destroy(gameObject);
     }
 
