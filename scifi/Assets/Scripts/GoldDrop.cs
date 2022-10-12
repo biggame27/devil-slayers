@@ -8,10 +8,13 @@ public class GoldDrop : MonoBehaviour
     TestPage testPage;
     public Collider2D playerCollider;
     private bool pickUpAllowed;
+    private int time;
+    public int maxTime;
 
     void Start()
     {
         playerCollider = GameObject.Find("Player").GetComponent<Collider2D>();
+        StartCoroutine(TimeLimit());
     }
 
     void Picking()
@@ -48,5 +51,17 @@ public class GoldDrop : MonoBehaviour
     public bool GetAllowed()
     {
         return pickUpAllowed;
+    }
+
+    IEnumerator TimeLimit()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(1f);
+            time++;
+            if(time >= maxTime)
+                Destroy(gameObject);
+        }
+
     }
 }

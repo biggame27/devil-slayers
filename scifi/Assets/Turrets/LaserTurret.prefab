@@ -108,7 +108,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 7
+  damage: 4.5
 --- !u!95 &7591291218002186605
 Animator:
   serializedVersion: 4
@@ -263,7 +263,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 5
+  damage: 4
 --- !u!95 &4410591161885621179
 Animator:
   serializedVersion: 4
@@ -587,7 +587,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 4
+  damage: 3
 --- !u!95 &5681635318834891873
 Animator:
   serializedVersion: 4
@@ -2000,7 +2000,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 3
+  damage: 2
 --- !u!95 &5159565715162552414
 Animator:
   serializedVersion: 4
@@ -2324,7 +2324,7 @@ MonoBehaviour:
   useLaser: 1
   bullet: {fileID: 0}
   healthBar: {fileID: 5159565713810978907}
-  damage: 15
+  damage: 6
 --- !u!95 &3738997630551943090
 Animator:
   serializedVersion: 4

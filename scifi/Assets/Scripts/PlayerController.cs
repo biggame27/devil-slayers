@@ -278,7 +278,7 @@ public class PlayerController : MonoBehaviour
     {
         return building;
     }
-
+    
     public void PickUp()
     {
         foreach (Transform t in golds)
@@ -291,7 +291,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
-
+    
     public void CheckPickable()
     {
         foreach (Transform t in golds)
@@ -305,4 +305,5 @@ public class PlayerController : MonoBehaviour
         }
         pickUI.GetComponent<Image>().enabled = false;
     }
+    
 }

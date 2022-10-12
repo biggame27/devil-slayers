@@ -264,8 +264,7 @@ MonoBehaviour:
   followMoveSpeed: 0.4
   moveSpot: {x: 0, y: 0}
   healthBar: {fileID: 4740272755495235021}
-  goldStorage: {fileID: 0}
-  enemyScaling: 1.5
+  enemyScaling: 2
 --- !u!50 &8086174282104575565
 Rigidbody2D:
   serializedVersion: 4

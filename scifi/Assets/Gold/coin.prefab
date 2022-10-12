@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCollider: {fileID: 0}
+  maxTime: 30
 --- !u!61 &5996346508101224748
 BoxCollider2D:
   m_ObjectHideFlags: 0
