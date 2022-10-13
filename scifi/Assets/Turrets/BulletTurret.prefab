@@ -415,7 +415,7 @@ MonoBehaviour:
   useLaser: 0
   bullet: {fileID: 8789863810996517417, guid: ae16869871076bc4aa18d5522932b676, type: 3}
   healthBar: {fileID: 5159565713810978907}
-  damage: 16
+  damage: 20
 --- !u!95 &1906951977567686359
 Animator:
   serializedVersion: 4
@@ -1367,6 +1367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeCosts: 050000000a0000000f00000014000000190000001e000000
+  damages: 06000000080000000e000000140000001a0000003600000066000000
 --- !u!1 &6637377779818638351
 GameObject:
   m_ObjectHideFlags: 0

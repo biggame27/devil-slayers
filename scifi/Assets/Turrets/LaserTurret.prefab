@@ -1892,6 +1892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeCosts: 1400000019000000280000002d0000003c000000
+  damages: 060000000c00000010000000120000001e000000b4000000
 --- !u!1 &5159565715162552402
 GameObject:
   m_ObjectHideFlags: 0

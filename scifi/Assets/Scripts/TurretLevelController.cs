@@ -7,6 +7,8 @@ public class TurretLevelController : MonoBehaviour
     private int level = 1;
     [SerializeField]
     private int[] upgradeCosts;
+    [SerializeField]
+    private int[] damages;
     private PlayerController player;
 
     void Start()
@@ -41,5 +43,19 @@ public class TurretLevelController : MonoBehaviour
         if(level-1 == upgradeCosts.Length)
             return 69;
         return upgradeCosts[level-1];
+    }
+
+    public int GetDamage()
+    {
+        if(level-1 == damages.Length)
+            return 69;
+        return damages[level-1];
+    }
+
+    public int GetFutureDamage()
+    {
+        if(level >= damages.Length)
+            return 69;
+        return damages[level];
     }
 }

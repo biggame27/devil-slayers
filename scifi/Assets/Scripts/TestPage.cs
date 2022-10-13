@@ -17,10 +17,13 @@ public class TestPage : MonoBehaviour
     int timer;
     bool runDown = false;
     bool showingAnswers = false;
+    bool correct = true;
 
     int playerGuess;
     int correctChoice;
     public GameObject[] choices;
+    public TMP_Text gainText;
+    public TMP_Text lossText;
     private string input;
     Dictionary<string, string> myMap = new Dictionary<string, string>();
     Dictionary<string, string> katakanaMap = new Dictionary<string, string>();
@@ -29,6 +32,9 @@ public class TestPage : MonoBehaviour
     {
         gold = GameObject.Find("Player").transform.GetChild(3).GetChild(2).GetChild(0).GetComponent<Gold>();
         GetComponent<Canvas>().enabled = false;
+        if(PlayerPrefs.GetInt("EasyMode") == 0)
+            maxTime = 5;
+            
         timer = maxTime;
         StoreHiragana();
         StoreKatakana();
@@ -255,14 +261,23 @@ public class TestPage : MonoBehaviour
             if(timer <= 0)
             {
                 CheckCorrect(5);
+                deltaTime = 0;
             }
         }
 
         if(showingAnswers)
         {
             deltaTime += Time.unscaledDeltaTime;
-            if(deltaTime >= 1f)
-                HideAnswers();
+            if(correct)
+            {
+                if(deltaTime >= 1f)
+                    HideAnswers();
+            }else
+            {
+                if(deltaTime >= 2.5f)
+                    HideAnswers();
+            }
+            
         }
         
     }
@@ -278,20 +293,29 @@ public class TestPage : MonoBehaviour
         if(ans != 5)
         {
             playerGuess =ans;
+            correct= true;
             //StopCoroutine(ClockTick());
             if(ans == correctChoice)
             {
-                if(PlayerPrefs.GetInt("EasyMode") == 0)
-                    gold.AddGold(10);
-                else
-                    gold.AddGold(5);
+                gainText.enabled = true;
+                gold.AddGold(10);
+                gainText.text = "+" + 10;
+                
             }
             else
             {
+                correct = false;
+                lossText.enabled = true;
                 if(PlayerPrefs.GetInt("EasyMode") == 0)
-                    gold.SubtractGold(15);
+                {
+                    gold.SubtractGold(20);
+                    lossText.text = "-" + 20;
+                }
                 else
-                    gold.SubtractGold(3);
+                {
+                    gold.SubtractGold(10);
+                    lossText.text = "-" + 10;
+                }
                 choices[ans].transform.GetChild(2).gameObject.GetComponent<Image>().enabled = true;
             }
         }
@@ -308,6 +332,8 @@ public class TestPage : MonoBehaviour
         choices[playerGuess].transform.GetChild(2).gameObject.GetComponent<Image>().enabled = false;
         choices[correctChoice].transform.GetChild(1).gameObject.GetComponent<Image>().enabled = false;
         GetComponent<Canvas>().enabled = false;
+        gainText.enabled = false;
+        lossText.enabled = false;
         pauseManager.Begin();
         Time.timeScale = 1;
         showingAnswers = false;

@@ -61,9 +61,9 @@ public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
         if(PlayerPrefs.GetInt("EasyMode") == 1)
-            health = initHealth * ((score.GetScore()/500)*enemyScaling+1);
+            health = initHealth * ((score.GetScore()/50)*enemyScaling+1);
         else
-            health = initHealth * ((score.GetScore()/1000)*enemyScaling+1);
+            health = initHealth * ((score.GetScore()/100)*enemyScaling+1);
         maxHealth = health;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -115,7 +115,7 @@ public class Enemy : MonoBehaviour
         {
             DoDelayAction(1f);
         }
-        else if(distance < .78)
+        else if(distance < .85)
         {
             direction.Normalize();
             rb.MovePosition(rb.position + direction*this.followMoveSpeed*Time.fixedDeltaTime);
@@ -218,7 +218,7 @@ public class Enemy : MonoBehaviour
     public void RemoveEnemy()
     {
         enemySpawner.GetComponent<EnemySpawner>().currentMobs -= 1;
-        score.AddScore(worth*100);
+        score.AddScore(worth*10);
         Destroy(gameObject);
     }
 

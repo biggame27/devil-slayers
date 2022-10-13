@@ -9,6 +9,6 @@ public class PlayerData
 
     public PlayerData (PlayerController player)
     {
-        score = player.GetScore().GetScore();
+        score = Mathf.Max(player.GetScore().GetScore(), score);
     }
 }
