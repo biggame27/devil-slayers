@@ -281,11 +281,17 @@ public class TestPage : MonoBehaviour
             //StopCoroutine(ClockTick());
             if(ans == correctChoice)
             {
-                gold.AddGold(5);
+                if(PlayerPrefs.GetInt("EasyMode") == 0)
+                    gold.AddGold(10);
+                else
+                    gold.AddGold(5);
             }
             else
             {
-                gold.SubtractGold(10);
+                if(PlayerPrefs.GetInt("EasyMode") == 0)
+                    gold.SubtractGold(15);
+                else
+                    gold.SubtractGold(3);
                 choices[ans].transform.GetChild(2).gameObject.GetComponent<Image>().enabled = true;
             }
         }

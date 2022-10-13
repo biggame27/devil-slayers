@@ -2921,6 +2921,7 @@ MonoBehaviour:
   health: 30
   healthBar: {fileID: 1430730095}
   pauseManager: {fileID: 911549821}
+  playerController: {fileID: 1460613299}
 --- !u!1 &1297751259
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,8 @@ public class Beacon : MonoBehaviour
     public HealthBar healthBar;
     [SerializeField]
     private PauseManager pauseManager;
+    [SerializeField]
+    private PlayerController playerController;
     private float maxHealth;
 
     void Start()
@@ -34,6 +36,7 @@ public class Beacon : MonoBehaviour
 
     public void Defeated()
     {
+        playerController.SavePlayer();
         pauseManager.Death();
     }
 

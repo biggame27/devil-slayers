@@ -13,6 +13,8 @@ public class PauseManager : MonoBehaviour
     private Canvas pauseCanvas;
     [SerializeField]
     private Canvas deathCanvas;
+    [SerializeField]
+    private PlayerController playerController;
     public void Start()
     {
         pauseCanvas.enabled = false;
@@ -21,6 +23,7 @@ public class PauseManager : MonoBehaviour
 
     public void OnClick()
     {
+        playerController.SavePlayer();
         if(!paused)
             PauseGame();
         else

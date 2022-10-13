@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Gold gold;
     [SerializeField]
+    private Score score;
+    [SerializeField]
     private GameObject turretInfo;
     [SerializeField]
     private PauseManager pauseManager;
@@ -233,6 +235,11 @@ public class PlayerController : MonoBehaviour
         return gold;
     }
 
+    public Score GetScore()
+    {
+        return score;
+    }
+
     void SwordAttack()
     {
         LockMovement();
@@ -266,6 +273,7 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
+        SavePlayer();
         pauseManager.Death();
     }
 
@@ -304,6 +312,18 @@ public class PlayerController : MonoBehaviour
             }
         }
         pickUI.GetComponent<Image>().enabled = false;
+    }
+
+    public void SavePlayer()
+    {
+        SaveSystem.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+
+        score.SetScore(data.score);
     }
     
 }

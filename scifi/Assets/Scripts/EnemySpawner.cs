@@ -20,7 +20,7 @@ public class EnemySpawner : MonoBehaviour
     private Transform storage;
 
     [SerializeField]
-    private int maxMobs = 5;
+    private int maxMobs;
 
     public int currentMobs = 0;
     // Start is called before the first frame update

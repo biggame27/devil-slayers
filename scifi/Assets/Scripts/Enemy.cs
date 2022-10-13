@@ -60,7 +60,10 @@ public class Enemy : MonoBehaviour
         enemySpawner = GameObject.Find("EnemySpawner");
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
-        health = initHealth * ((score.GetScore()/1000)*enemyScaling+1);
+        if(PlayerPrefs.GetInt("EasyMode") == 1)
+            health = initHealth * ((score.GetScore()/500)*enemyScaling+1);
+        else
+            health = initHealth * ((score.GetScore()/1000)*enemyScaling+1);
         maxHealth = health;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();

@@ -4551,6 +4551,7 @@ MonoBehaviour:
   canvas: {fileID: 6326702415260217632}
   pauseCanvas: {fileID: 7438218327903971816}
   deathCanvas: {fileID: 2686174180231214152}
+  playerController: {fileID: 4241495810636801054}
 --- !u!114 &9134195634778297811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5170,6 +5171,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5ed68cfdd44c91b4dad2a95c7371e7d8, type: 3}
   - {fileID: 1860136770, guid: 48ffbc47c37c52f4bb9c3d8fd4728d01, type: 3}
   gold: {fileID: 1126165908689224463}
+  score: {fileID: 1378702478654880422}
   turretInfo: {fileID: 6042638983104088585}
   pauseManager: {fileID: 2834519899826209612}
   inputDeadZone: 0.19
