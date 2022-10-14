@@ -257,14 +257,14 @@ MonoBehaviour:
   maxX: 0.64
   minY: -0.64
   maxY: 0.64
-  initHealth: 9
+  initHealth: 6
   worth: 1
   waitTime: 1
   patrolMoveSpeed: 0.2
   followMoveSpeed: 0.2
   moveSpot: {x: 0, y: 0}
   healthBar: {fileID: 4740272755495235021}
-  enemyScaling: 0.5
+  enemyScaling: 0.1
 --- !u!50 &8086174282104575565
 Rigidbody2D:
   serializedVersion: 4

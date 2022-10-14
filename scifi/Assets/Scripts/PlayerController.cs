@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
         foreach(Transform child in turretStorage)
         {
             check = child.gameObject.GetComponent<Collider2D>().OverlapPoint(point);
-            if(check)
+            if(check && child != GameObject.Find("Beacon").transform)
             {
                 SendTurretInfo(child);
                 return true;

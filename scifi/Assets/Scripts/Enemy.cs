@@ -63,13 +63,15 @@ public class Enemy : MonoBehaviour
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
         if(PlayerPrefs.GetInt("EasyMode") == 1)
         {
-            health = initHealth * ((score.GetScore()/50)*enemyScaling+1);
-            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/50)*enemyScaling)*0.01f));
+            //health = initHealth * ((score.GetScore()/150)*enemyScaling+1);
+            health = Mathf.Pow(initHealth,((score.GetScore()/1000)*enemyScaling+1));
+            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/1500)*enemyScaling)*0.01f));
         }
         else
         {
-            health = initHealth * ((score.GetScore()/100)*enemyScaling+1);
-            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/100)*enemyScaling)*0.01f));
+            //health = initHealth * ((score.GetScore()/300)*enemyScaling+1);
+            health = Mathf.Pow(initHealth,((score.GetScore()/2000)*enemyScaling+1));
+            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/3000)*enemyScaling)*0.01f));
         }
         maxHealth = health;
         animator = GetComponent<Animator>();
@@ -83,7 +85,7 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(canMove)
+        if(canMove && !player.GetComponent<PlayerController>().GetCanBuild())
         {
             time += Time.deltaTime;
             FollowPlayer();
@@ -123,7 +125,7 @@ public class Enemy : MonoBehaviour
         {
             DoDelayAction(1f);
         }
-        else if(distance < .85 || time >= 45f)
+        else if(distance < .85 || time >= 100f)
         {
             direction.Normalize();
             rb.MovePosition(rb.position + direction*this.followMoveSpeed*Time.fixedDeltaTime);
@@ -226,7 +228,7 @@ public class Enemy : MonoBehaviour
     public void RemoveEnemy()
     {
         enemySpawner.GetComponent<EnemySpawner>().currentMobs -= 1;
-        score.AddScore(worth*10);
+        score.AddScore(worth*100);
         Destroy(gameObject);
     }
 

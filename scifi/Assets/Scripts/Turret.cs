@@ -25,6 +25,9 @@ public class Turret : MonoBehaviour
     [SerializeField]
     private Bullet bullet;
 
+    [SerializeField]
+    private PlayerController player;
+
     private float maxHealth; 
     private float range = 5f;
     public HealthBar healthBar;
@@ -51,6 +54,7 @@ public class Turret : MonoBehaviour
     {
         maxHealth = health;
         _enemies = GameObject.Find("Enemies").transform;
+        player = GameObject.Find("Player").GetComponent<PlayerController>();
         StartCoroutine(Fire());
     }
 
@@ -87,7 +91,8 @@ public class Turret : MonoBehaviour
         while(true)
         {
             yield return new WaitForSeconds(waitTime);
-            animator.SetTrigger("BeginFire");
+            if(!player.GetCanBuild())
+                animator.SetTrigger("BeginFire");
         }
     }
 
