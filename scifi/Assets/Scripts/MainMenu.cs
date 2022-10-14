@@ -12,9 +12,15 @@ public class MainMenu : MonoBehaviour
     {
         PlayerData data = SaveSystem.LoadPlayer();
         if(data != null)
+        {
             highestScore.text = "Highest score: " + data.score;
+            PlayerPrefs.SetInt("Score", data.score);
+        }
         else
+        {
             highestScore.text = "Highest score: 0";
+            PlayerPrefs.SetInt("Score", 0);
+        }
     }
     public void PlayGame()
     {

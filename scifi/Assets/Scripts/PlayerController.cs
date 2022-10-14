@@ -316,7 +316,8 @@ public class PlayerController : MonoBehaviour
 
     public void SavePlayer()
     {
-        SaveSystem.SavePlayer(this);
+        if(PlayerPrefs.GetInt("Score") < GetScore().GetScore())
+            SaveSystem.SavePlayer(this);
     }
 
     public void LoadPlayer()

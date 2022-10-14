@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreText;
+    public Text deathScoreText;
     public Gold gold;
     int score = 0;
     int multiplier = 1;
@@ -21,6 +22,7 @@ public class Score : MonoBehaviour
     public void DisplayScore()
     {
         scoreText.text = "Score: " +score.ToString("");
+        deathScoreText.text = "Score: " + score.ToString("");
     }
 
     public void SetScore(int _score)

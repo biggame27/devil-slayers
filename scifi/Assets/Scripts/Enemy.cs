@@ -23,14 +23,15 @@ public class Enemy : MonoBehaviour
     public int worth = 1;
     [SerializeField]
     private float waitTime;
-    public float patrolMoveSpeed = 0.3f;
-    public float followMoveSpeed = 0.4f;
+    public float patrolMoveSpeed = 0.2f;
+    public float followMoveSpeed = 0.2f;
     public Vector2 moveSpot;
     public HealthBar healthBar;
     private Transform target;
     Transform goldStorage;
     [SerializeField]
     private float enemyScaling;
+    private float time;
 
     bool following = false;
     bool defeated =false;
@@ -61,9 +62,15 @@ public class Enemy : MonoBehaviour
         player = GameObject.Find("Player");
         score = GameObject.Find("Score").transform.GetChild(0).gameObject.GetComponent<Score>();
         if(PlayerPrefs.GetInt("EasyMode") == 1)
+        {
             health = initHealth * ((score.GetScore()/50)*enemyScaling+1);
+            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/50)*enemyScaling)*0.01f));
+        }
         else
+        {
             health = initHealth * ((score.GetScore()/100)*enemyScaling+1);
+            followMoveSpeed = followMoveSpeed * (Mathf.Min(2.5f, 1+((score.GetScore()/100)*enemyScaling)*0.01f));
+        }
         maxHealth = health;
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -78,6 +85,7 @@ public class Enemy : MonoBehaviour
     {
         if(canMove)
         {
+            time += Time.deltaTime;
             FollowPlayer();
             Patrol();
         }
@@ -115,7 +123,7 @@ public class Enemy : MonoBehaviour
         {
             DoDelayAction(1f);
         }
-        else if(distance < .85)
+        else if(distance < .85 || time >= 45f)
         {
             direction.Normalize();
             rb.MovePosition(rb.position + direction*this.followMoveSpeed*Time.fixedDeltaTime);

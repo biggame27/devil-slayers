@@ -1236,6 +1236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1659649332156272160}
+  deathScoreText: {fileID: 2335952828192780503}
   gold: {fileID: 1126165908689224463}
 --- !u!1 &1427284870228026273
 GameObject:
@@ -4000,7 +4001,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 0.75448143}
+  m_Size: {x: 0.47264624, y: 0.5424558}
   m_EdgeRadius: 0
 --- !u!1 &4898680882843643916
 GameObject:
@@ -6717,7 +6718,6 @@ GameObject:
   - component: {fileID: 932934665134094659}
   - component: {fileID: 4898359034054108954}
   - component: {fileID: 2335952828192780503}
-  - component: {fileID: 1777057670856405681}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -6787,20 +6787,6 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Score: 0'
---- !u!114 &1777057670856405681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8414064855897282675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9535b5a583a4a81feafce35864f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 2335952828192780503}
-  gold: {fileID: 1126165908689224463}
 --- !u!1 &8467414258488530399
 GameObject:
   m_ObjectHideFlags: 0
